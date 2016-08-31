@@ -1,0 +1,31 @@
+---
+title: "Supplementary tables"
+author: "Ronald Petie^1^, Anders Garm^1^, Michael R. Hall^2^"
+csl: biomed-central(4).csl
+output:
+  word_document:
+    reference_docx: style-ref-frontiers-in-zoology(2).docx
+  pdf_document:
+    fig_caption: yes
+    keep_tex: no
+    number_sections: no
+html_document:
+  keep_md: no
+bibliography: references4.bib
+---
+
+```{r suppl_table, echo=FALSE, warning=FALSE, fig.cap="Days in captivity"}
+library(knitr)
+
+# Read table
+captivity.table <- read.csv(file.path("..", "Output", "Captivity_summary.csv"))
+
+# Make table
+kable(captivity.table, digits = c(rep(1, times = 5), 0, 0),
+      row.names = F,
+      col.names = c("", "min", "1st quartile", "median", "3rd quartile", "max",
+                    "first use", "second use"),
+      align = "c",
+      caption="Days spent in captivity and usage data")
+
+```

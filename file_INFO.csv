@@ -1,0 +1,86 @@
+main.directory,file.or.folder.name,collumn.name,description
+Data,1. Folder description,NA,This folder contains all data files.
+Data,B_W_circle_areaxx.csv,NA,This file contains the area of black and white in the field of view of a starfish when approaching a black and white circle.
+Data,B_W_circle_areaxx.csv,distance,Distance to the stimulus in cm
+Data,B_W_circle_areaxx.csv,area.black,Black area in pixels
+Data,B_W_circle_areaxx.csv,area.white,White area in pixels
+Data,Climate_Lizard_Island.csv,NA,Climate information on Lizard Island from AIMS
+Data,Coral reef contrastxx.csv,NA,This file contrast measurements done at Lizard Island.
+Data,Coral reef contrastxx.csv,date,date
+Data,Coral reef contrastxx.csv,location,Locations on Lizard Island. A - Small coral bommie north of south island. In the shallow part of the reef. B - Southeast side of horse shoe reef 
+Data,Coral reef contrastxx.csv,description,short description
+Data,Coral reef contrastxx.csv,sun,relative location of the sun
+Data,Coral reef contrastxx.csv,rep,repeat number
+Data,Coral reef contrastxx.csv,distance,distance from coral reef
+Data,Coral reef contrastxx.csv,scene,Scene: background or foreground
+Data,Coral reef contrastxx.csv,row,measurement order
+Data,Coral reef contrastxx.csv,mean,mean grey value in selected area
+Data,Coral reef contrastxx.csv,sd,standard deviation of grey value
+Data,Coral reef contrastxx.csv,mode,modulus of grey values
+Data,Coral reef contrastxx.csv,min,minumum grey value
+Data,Coral reef contrastxx.csv,max,maximum grey value
+Data,Coral reef contrastxx.csv,slice,frame number in image sequence
+Data,COTS data AIMSxx.csv,NA,This file contains the headings and timing of all behaviour experiments done at AIMS with the behavioural arena
+Data,COTS data AIMSxx.csv,type,stimulus type
+Data,COTS data AIMSxx.csv,animal.id,animal identifier
+Data,COTS data AIMSxx.csv,order,number indicating the order of execution
+Data,COTS data AIMSxx.csv,stimulus.type,stimulus type
+Data,COTS data AIMSxx.csv,stimulus.direction,Location of stimulus in the arena. Five stimulus locations were used
+Data,COTS data AIMSxx.csv,stimulus.name,final name used for stimulus. Remove indicates removal of measurement
+Data,COTS data AIMSxx.csv,date,date
+Data,COTS data AIMSxx.csv,batch,delivery date for batches of starfish
+Data,COTS data AIMSxx.csv,used.before,indicates if animal was used before
+Data,COTS data AIMSxx.csv,animal.diameter,animal diameter
+Data,COTS data AIMSxx.csv,no.arms,number of arms
+Data,COTS data AIMSxx.csv,regen.arms,number of regenerated arms
+Data,COTS data AIMSxx.csv,initial.heading,initial heading of locomotion in degrees
+Data,COTS data AIMSxx.csv,start.frame,frame were animal started moving
+Data,COTS data AIMSxx.csv,final.heading,final heading (where animal touched arena wall)
+Data,COTS data AIMSxx.csv,stop.frame,frame were behaviour ended
+Data,COTS data AIMSxx.csv,touch,indicates which part of the stimulus the animal touched. Only applies to square stimuli
+Data,Lagoon_blue_transmittance.txt,NA,This file contains the spectral data for the blue filter
+Data,Lagoon_blue_transmittance.txt,Wavelength(nm),Wavelength in nm
+Data,Lagoon_blue_transmittance.txt,Wavenumber(1/cm),Reciprocal of Wavelength
+Data,Lagoon_blue_transmittance.txt,Transmittance(%),Transmittance in percent.
+Data,relative_sensitivityxx.csv,NA,"Relative sensitivity values for crown-of-thorns starfish eyes, from petie(2016) published in Coral Reefs."
+Data,relative_sensitivityxx.csv,wavelength,Wavelength in nm
+Data,relative_sensitivityxx.csv,average,Mean sensitivity
+Data,relative_sensitivityxx.csv,stdev,Standard deviation of sensitivity
+Data,Trackingxx.csv,NA,This file contains the coordinates of the tracks for the biggest stimulus and the control experiment for the “black circle on a white background” experiment.
+Data,Trackingxx.csv,animal,animal identifier
+Data,Trackingxx.csv,stimulus,stimulus type. Same as stimulus.name in “COTS data AIMS” file.
+Data,Trackingxx.csv,type,indicates type of input. “centre” centre of arena. “stimulus” location of stimulus. “track” coordinates of the track.
+Data,Trackingxx.csv,t,time in seconds
+Data,Trackingxx.csv,x,x coordinates
+Data,Trackingxx.csv,y,y coordinates
+Data,Trackingxx.csv,x.cor,correction for x coordinates. Sometimes the camera was moved during the recording. Other times the file was too big to load normally and the size was halved.
+Data,Trackingxx.csv,y.cor,correction for y coordinates
+Doc,1. Folder description,NA,This folder contains all files needed for knitting the manuscript file
+Doc,biomed-central(4).csl,NA,Citation style file
+Doc,Black_sheet_white_sheet04.png,NA,Composite figure
+Doc,COTS_behaviour09.Rmd,NA,Markdown file for knitting manuscript file. Outputs PDF or DOCX file.
+Doc,Field_of_view06.png,NA,Composite figure
+Doc,references4.bib,NA,Bibliography file
+Doc,Setup_and_analysis05.png,NA,Composite figure
+Doc,Style-ref-frontiers-in-zoology(2).docx,NA,Style referens file for knitting DOCX file
+Figs,1. Folder description,NA,This folder is created by the master script. All figures generated by the scripts end up in this folder.
+Fun,1. Folder description,NA,All function scrips are located in this folder
+Fun,B_W_area_comparison01.R,NA,Script for comparing and plotting black VS white area when starfish approaches a black and white circle
+Fun,Captivity02.R,NA,Script for computing and plotting the time animals spent in captivity
+Fun,Circular_organiser04.R,NA,Script for organising circular plots in rows and adding figure lettering
+Fun,Coral_reef_contrast04.R,NA,Plots reef contrast as a function of distance
+Fun,COTS_behaviour_directions07.R,NA,Script for circular statistics on behavioural data from tank experiments
+Fun,COTS_reef_behaviour07.R,NA,Script for tracks and circular statistics of behavioural experiments on the reef.
+Fun,COTS_sizes04.R,NA,COTS size analysis script
+Fun,COTS_timing03.R,NA,Computes timing of onset of behaviour
+Fun,COTS-track-macro.ijm,NA,ImageJ macro for automated COTS tracking in tank experiments
+Fun,CreateSpace01.R,NA,Script for inserting empty spaces in repeated labels in tables
+Fun,Just_circles03.R,NA,"Create circular plots, without printing statistical parameters – just circles"
+Fun,My_ggplot_theme01.R,NA,Custom ggplot theme
+Fun,MyCircularPlot05.R,NA,"Create circular plots, WITH printed statistical parameters"
+Fun,Tracking04.R,NA,Create track plots for tank experiments
+Output,1. Folder description,NA,This folder is created by the master script. All numeric and statistical data generated by the scripts end up in this folder.
+root,1. Folder description,NA,The root directory
+root,analysis.R,NA,Master file for running all analysis and generating manuscript file
+root,file_INFO.csv,NA,This file.
+root,session_info.txt,NA,File with session info. Lists all attached packages.

@@ -1,0 +1,311 @@
+type;animal.id;order;stimulus.type;stimulus.direction;stimulus.name;date;batch;used.before;animal.diameter;no.arms;regen.arms;initial.heading;start.frame;final.heading;stop.frame;touch;Notes
+Black circle on white;0;1;100;3;remove;2015-05-19;Week 19;no;31,2;15;;131,9;NA;17,8;NA;;
+Black circle on white;0;2;80;1;remove;;;;;;;13,1;7;12,9;23;;
+Black circle on white;0;3;60;5;37°;;;;;;;1,2;51;-2,3;66;;
+Black circle on white;0;4;40;4;27°;;;;;;;-24,5;31;-14,2;44;;
+Black circle on white;0;5;20;3;14°;;;;;;;35,4;116;13,8;134;;
+Black circle on white;0;6;10;2;7°;;;;;;;-54,2;24;-33,1;42;;
+Black circle on white;0;7;control;1;control;;;;;;;NA;NA;NA;NA;;Animal did not respond
+Black circle on white;1;1;40;1;27°;2015-05-25;Week 21;no;21,6;15;;-78,5;14;-49,4;38;;
+Black circle on white;1;2;20;4;14°;;;;;;;20,6;6;10,9;22;;
+Black circle on white;1;3;60;5;37°;;;;;;;75,8;16;1,6;40;;
+Black circle on white;1;4;control;3;control;;;;;;;-89,6;13;-93,6;35;;
+Black circle on white;1;5;10;2;7°;;;;;;;135,8;10;153,1;32;;
+Black circle on white;1;6;5;3;4°;;;;;;;13,6;10;38,3;33;;
+Black circle on white;2;1;10;4;7°;2015-05-25;Week 21;no;19,1;16;;-165,9;19;-133,0;72;;
+Black circle on white;2;2;60;1;37°;;;;;;;20,8;25;1,0;57;;
+Black circle on white;2;3;40;5;27°;;;;;;;-14,1;54;-4,9;90;;Animal did not respond at first trial. Sequence in folder: “2015-05-25 15:37:19”
+Black circle on white;2;4;control;2;control;;;;;;;168,5;17;146,1;61;;
+Black circle on white;2;5;5;1;4°;;;;;;;4,0;47;48,7;105;;
+Black circle on white;2;6;20;3;14°;;;;;;;-18,7;52;-129,8;140;;Animal was non-responsive first. Two part recording. Right sequence in folder: “2015-05-25 16:15:09”
+Black circle on white;3;1;20;4;14°;2015-05-26;Week 21;no;30,9;16;;-21,9;14;-8,9;25;;Accidentally took two animals. Sequence is in folder “2015-05-26 13:40:03”
+Black circle on white;3;2;10;2;7°;;;;;;;-97,1;1;-72,9;13;;
+Black circle on white;3;3;5;5;4°;;;;;;;163,5;9;144,9;23;;
+Black circle on white;3;4;control;3;control;;;;;;;-115,0;10;-108,1;24;;
+Black circle on white;3;5;60;5;37°;;;;;;;-9,8;12;-10,4;24;;
+Black circle on white;3;6;40;4;27°;;;;;;;25,5;33;37,0;49;;
+Black circle on white;4;1;5;2;4°;2015-05-26;Week 21;no;20,2;16;;140,8;33;-152,6;63;;High accuracy in this animal!
+Black circle on white;4;2;60;1;37°;;;;;;;-35,9;13;-6,6;40;;
+Black circle on white;4;3;40;2;27°;;;;;;;23,9;26;2,7;46;;
+Black circle on white;4;4;control;1;control;;;;;;;22,9;89;5,5;115;;
+Black circle on white;4;5;20;5;14°;;;;;;;0,3;23;-16,2;47;;
+Black circle on white;4;6;10;3;7°;;;;;;;66,5;34;69,3;54;;
+Black circle on white;5;1;control;4;control;2015-05-26;Week 21;no;24,5;14;;-77,3;25;-60,5;43;;Animal appeared not to take notice of the stimuli, or move away from the stimulus.
+Black circle on white;5;2;20;1;14°;;;;;;;-61,9;11;-52,4;32;;
+Black circle on white;5;3;60;4;37°;;;;;;;108,9;13;112,8;38;;
+Black circle on white;5;4;5;3;4°;;;;;;;132,4;16;146,9;42;;
+Black circle on white;5;5;10;2;7°;;;;;;;-100,0;33;-156,0;73;;
+Black circle on white;5;6;40;5;27°;;;;;;;166,3;23;132,1;59;;
+Black circle on white;6;1;40;3;27°;2015-05-27;Week 21;no;12,5;19;;-45,4;30;-3,7;80;;
+Black circle on white;6;2;20;4;14°;;;;;;;48,0;9;0,3;51;;
+Black circle on white;6;3;60;5;37°;;;;;;;134,8;20;176,6;65;;
+Black circle on white;6;4;10;2;7°;;;;;;;68,0;12;68,8;50;;
+Black circle on white;6;5;control;1;control;;;;;;;79,6;45;13,3;160;;Animal walked in spiral shaped “search path”
+Black circle on white;6;6;5;3;4°;;;;;;;-70,4;24;168,3;160;;Animal walked in spiral shaped “search path”
+Black circle on white;7;1;60;1;37°;2015-05-27;Week 21;no;31,2;15;;-9,2;20;-9,3;34;;
+Black circle on white;7;2;40;5;27°;;;;;;;-90,4;54;-135,1;66;;
+Black circle on white;7;3;5;2;4°;;;;;;;125,8;34;111,2;44;;
+Black circle on white;7;4;20;4;14°;;;;;;;-157,0;21;-140,0;32;;
+Black circle on white;7;5;control;3;control;;;;;;;45,1;46;54,9;56;;
+Black circle on white;7;6;10;4;7°;;;;;;;73,9;203;78,7;219;;
+Black circle on white;8;1;60;2;37°;2015-05-28;Week 21;no;11,5;16;;13,8;34;5,5;76;;
+Black circle on white;8;2;control;5;control;;;;;;;52,2;14;46,3;58;;
+Black circle on white;8;3;40;1;27°;;;;;;;7,6;18;0,5;62;;
+Black circle on white;8;4;20;3;14°;;;;;;;16,2;35;77,5;82;;
+Black circle on white;8;5;10;4;7°;;;;;;;-2,8;31;-46,8;72;;
+Black circle on white;8;6;5;1;4°;;;;;;;44,0;21;13,6;69;;
+Black circle on white;9;1;40;5;27°;2015-05-28;Week 21;no;20,4;16;;-30,6;32;3,9;59;;Beautiful animal!
+Black circle on white;9;2;60;2;37°;;;;;;;-81,9;43;-0,8;79;;
+Black circle on white;9;3;10;2;7°;;;;;;;-137,2;13;-103,8;40;;
+Black circle on white;9;4;control;3;control;;;;;;;15,7;35;30,5;58;;
+Black circle on white;9;5;5;4;4°;;;;;;;-179,8;50;158,0;75;;
+Black circle on white;9;6;20;5;14°;;;;;;;179,2;53;-169,8;79;;
+Black circle on white;10;1;10;1;7°;2015-05-28;Week 21;no;38,0;16;;-1,6;19;15,0;46;;
+Black circle on white;10;2;60;5;37°;;;;;;;-21,1;25;-11,4;47;;
+Black circle on white;10;3;5;1;4°;;;;;;;;;;;;Animal non-responsive, terminated experiment
+Black circle on white;11;1;10;5;7°;2015-06-10;Week 21;no;12,3;14;;-63,6;30;-151,7;93;;Moved heavy object towards the end of the recording. Startled starfish turned into a half-ball. Nice spiral exit path.
+Black circle on white;11;2;20;2;14°;;;;;;;74,5;6;-127,3;68;;Turned into a half-ball again, without provocation. Frame 56.
+Black circle on white;11;3;control;3;control;;;;;;;-106,4;15;-20,7;60;;
+Black circle on white;12;1;40;1;27°;2015-06-10;Week 21;no;15,6;14;;4,3;33;-3,7;66;;
+Black circle on white;12;2;control;2;control;;;;;;;-53,5;10;-83,2;56;;
+Black circle on white;12;3;5;4;4°;;;;;;;-21,7;23;-27,2;63;;
+Black circle on white;13;1;control;5;control;2015-06-10;Week 23;no;33,0;17;;59,9;122;49,7;143;;
+Black circle on white;13;2;20;1;14°;;;;;;;-7,9;123;6,6;140;;
+Black circle on white;13;3;10;2;7°;;;;;;;-161,1;6;-155,4;24;;
+Black circle on white;14;1;5;5;4°;2015-06-10;Week 21;no;9,7;15;;-11,8;60;36,0;133;;
+Black circle on white;14;2;control;3;control;;;;;;;109,7;9;83,7;55;;
+Black circle on white;14;3;40;4;27°;;;;;;;-81,3;24;6,6;74;;
+Black circle on white;15;1;5;3;4°;2015-06-10;Week 23;no;33,4;15;;-167,6;24;-134,5;55;;Animal had trouble forming a ball.
+Black circle on white;15;2;10;5;7°;;;;;;;9,4;26;24,3;47;;
+Black circle on white;15;3;control;4;control;;;;;;;-169,2;18;144,7;39;;
+Black circle on white;16;1;20;2;14°;2015-06-10;Week 21;no;16,2;16;;126,8;41;-21,7;106;;Animal walked in spirals.
+Black circle on white;16;2;control;1;control;;;;;;;169,0;31;116,1;77;;
+Black circle on white;16;3;10;4;7°;;;;;;;56,4;30;115,0;71;;
+Black circle on white;17;1;control;4;control;2015-06-11;Week 21;no;8,5;15;;18,5;54;-67,9;173;;
+Black circle on white;17;2;5;3;4°;;;;;;;43,2;19;26,6;110;;
+Black circle on white;17;3;20;1;14°;;;;;;;10,2;7;0,1;77;;
+Black circle on white;18;1;10;5;7°;2015-06-11;Week 23;no;29,0;16;;0,0;63;38,0;87;;
+Black circle on white;18;2;20;4;14°;;;;;;;-128,0;125;-131,9;146;;
+Black circle on white;18;3;5;2;4°;;;;;;;0,0;;0,0;;;Animal did not respond at first. Turned off recording. Animal went straight for target anyway at 11:12.
+Grey circle on white;19;1;0.1;1;0.1;2015-06-22;Week 25;no;32,5;15;2;-20,3;90;-5,5;104;;
+Grey circle on white;19;2;0.3;2;0.3;;;;;;;119,8;105;127,1;116;;
+Grey circle on white;19;3;0.5;3;0.5;;;;;;;24,5;1;28,3;8;;Animal started moving before I started recording.
+Grey circle on white;20;1;0.7;4;0.7;2015-06-22;Week 25;no;14,9;16;1;26,8;48;-12,2;86;;
+Grey circle on white;20;2;0.9;5;0.9;;;;;;;-29,8;17;0,8;53;;
+Grey circle on white;20;3;0.3;1;0.3;;;;;;;43,8;24;34,9;80;;
+Grey circle on white;21;1;0.5;2;0.5;2015-06-22;Week 25;no;33,4;15;2;-64,6;49;-55,5;65;;Laterally bent arm, looking??
+Grey circle on white;21;2;0.7;3;0.7;;;;;;;-174,0;29;82,9;57;;
+Grey circle on white;21;3;0.9;4;0.9;;;;;;;61,9;41;22,0;62;;Nice return to expected heading!
+Grey circle on white;22;1;0.1;5;0.1;2015-06-23;Week 25;no;9,6;18;3;-160,0;5;-168,7;68;;
+Grey circle on white;22;2;0.5;1;0.5;;;;;;;-171,1;9;179,5;93;;
+Grey circle on white;22;3;0.7;2;0.7;;;;;;;79,7;19;NA;NA;;Animal only walked in circles, aborted test.
+Grey circle on white;23;1;0.7;3;0.7;2015-06-23;Week 25;no;34,5;15;0;17,7;46;12,7;63;;
+Grey circle on white;23;2;0.9;4;0.9;;;;;;;-36,1;256;-34,0;266;;Animal “abruptly” starts walking at frame ~250
+Grey circle on white;23;3;0.3;5;0.3;;;;;;;24,7;81;18,9;89;;
+Grey circle on white;24;1;0.7;1;0.7;2015-06-23;Week 25;no;15,2;14;3;37,8;35;7,6;77;;
+Grey circle on white;24;2;0.9;2;0.9;;;;;;;-15,5;15;2,0;55;;Leading with regenerated arms!
+Grey circle on white;24;3;0.1;3;0.1;;;;;;;-120,1;22;78,2;112;;Full reversal of direction of movement.
+Grey circle on white;25;1;0.3;4;0.3;2015-06-23;Week 25;no;26,0;12;2;80,7;32;89,1;55;;
+Grey circle on white;25;2;0.5;5;0.5;;;;;;;36,2;11;8,0;31;;
+Grey circle on white;25;3;0.9;1;0.9;;;;;;;-10,5;31;7,3;50;;
+Grey circle on white;26;1;0.1;2;0.1;2015-06-23;Week 25;no;11,6;17;3;-123,9;43;4,8;159;;Excessive search path
+Grey circle on white;26;2;0.3;3;0.3;;;;;;;-160,9;43;34,9;170;;Excessive search path
+Grey circle on white;26;3;0.5;4;0.5;;;;;;;39,7;49;26,5;112;;
+Grey circle on white;27;1;0.7;5;0.7;2015-06-23;Week 25;no;37,9;14;3;-31,5;93;-46,9;116;;
+Grey circle on white;27;2;0.1;1;0.1;;;;;;;-110,5;5;-116,8;21;;
+Grey circle on white;27;3;0.3;2;0.3;;;;;;;-29,0;34;-18,9;50;;
+Grey circle on white;28;1;0.5;3;0.5;2015-06-23;Week 25;no;12,5;15;0;15,9;25;0,8;206;;Animal is spot on... after an extensive search.
+Grey circle on white;28;2;0.7;4;0.7;;;;;;;50,9;28;7,6;93;;
+Grey circle on white;28;3;0.9;5;0.9;;;;;;;-4,7;13;-1,6;51;;
+Grey circle on white;29;1;0.1;4;0.1;2015-06-24;Week 25;no;33,5;16;1;102,5;21;76,1;45;;
+Grey circle on white;29;2;0.5;1;0.5;;;;;;;-152,4;18;-176,5;37;;
+Grey circle on white;29;3;0.7;3;0.7;;;;;;;-142,5;5;-150,5;24;;
+Grey circle on white;30;1;0.9;4;0.9;2015-06-24;Week 25;no;12,3;15;4;51,3;42;-7,6;108;;
+Grey circle on white;30;2;0.1;5;0.1;;;;;;;178,1;28;-151,0;90;;
+Grey circle on white;30;3;0.3;1;0.3;;;;;;;-79,9;20;10,7;107;;
+Grey circle on white;31;1;0.5;2;0.5;2015-06-24;Week 25;no;28,5;17;1;178,0;34;-164,2;72;;Beautiful animal!
+Grey circle on white;31;2;0.9;3;0.9;;;;;;;-4,8;57;4,1;75;;
+Grey circle on white;31;3;0.1;4;0.1;;;;;;;-81,7;63;-95,7;85;;
+Grey circle on white;32;1;0.3;5;0.3;2015-06-24;Week 25;no;15,9;20;0;-26,0;18;-15,8;67;;
+Grey circle on white;32;2;0.7;1;0.7;;;;;;;99,2;48;80,7;102;;
+Grey circle on white;32;3;0.9;4;0.9;;;;;;;12,3;21;48,0;87;;Abrupt turn 10 cm in front of target.
+Grey circle on white;33;1;0.1;3;0.1;2015-06-24;Week 25;no;31,3;14;5;178,3;61;164,6;85;;
+Grey circle on white;33;2;0.3;4;0.3;;;;;;;-151,3;127;-165,9;146;;
+Grey circle on white;33;3;0.5;5;0.5;;;;;;;-48,8;212;-48,1;232;;
+Grey circle on white;34;1;0.9;1;0.9;2015-06-24;Week 25;no;15,7;16;8;36,9;127;12,3;175;;Power out during recording.
+Grey circle on white;34;2;0.1;2;0.1;;;;;;;17,8;155;11,3;211;;
+Grey circle on white;34;3;0.3;3;0.3;;;;;;;-38,7;130;-90,2;191;;
+Grey circle on white;35;1;0.5;4;0.5;2015-06-26;Week 25;no;10,6;13;0;-150,5;13;-156,9;58;;
+Grey circle on white;35;2;0.7;5;0.7;;;;;;;-175,2;55;7,0;166;;
+B&W circle on grey;35;1;60;4;37°/47°;2015-06-30;Week 25;yes;15,4;14;3;91,1;60;70,0;110;;Animal is not the same animal 35 as in previous experiment. Mistake in numbering.
+B&W circle on grey;35;2;40;2;27°/35°;;;;;;;1,1;24;-0,3;59;;Goes straight for target
+B&W circle on grey;35;3;20;3;14°/20°;;;;;;;-4,6;23;-4,2;56;;
+B&W circle on grey;36;1;control;4;control;2015-06-30;Week 25;yes;33,7;14;1;-145,4;166;-141,2;179;;long delay
+B&W circle on grey;36;2;10;5;7°/10°;;;;;;;-1,3;228;15,7;241;;long delay
+B&W circle on grey;36;3;5;3;4°/5°;;;;;;;98,8;351;82,7;363;;long delay
+B&W circle on grey;37;1;40;4;27°/35°;2015-06-30;Week 25;no;25,1;15;0;152,0;12;158,7;38;;
+B&W circle on grey;37;2;20;5;14°/20°;;;;;;;-15,1;25;-13,6;51;;
+B&W circle on grey;37;3;control;1;control;;;;;;;167,8;27;170,9;54;;
+B&W circle on grey;38;1;10;2;7°/10°;2015-06-30;Week 25;yes;34,0;15;2;-69,2;430;-38,7;450;;long delay. Long recording. Animal walks to target, rounds arena and climbs up opposite wall.
+B&W circle on grey;38;2;5;5;4°/5°;;;;;;;-178,7;363;162,4;383;;long delay
+B&W circle on grey;38;3;60;1;37°/47°;;;;;;;81,7;564;99,4;581;;
+B&W circle on grey;39;1;20;1;14°/20°;2015-06-30;Week 25;yes;12,1;16;2;10,9;92;92,8;153;;Animal makes abrupt turn away from target.
+B&W circle on grey;39;2;control;3;control;;;;;;;-71,6;36;-34,3;99;;
+B&W circle on grey;39;3;10;5;7°/10°;;;;;;;172,6;39;105,2;236;;Nice search path.
+B&W circle on grey;40;1;5;1;4°/5°;2015-07-01;Week 25;yes;12,2;15;0;-85,2;35;-113,6;103;;
+B&W circle on grey;40;2;60;3;37°/47°;;;;;;;20,3;6;1,2;42;;Nice response!
+B&W circle on grey;40;3;control;2;control;;;;;;;-32,9;9;97,2;50;;
+B&W circle on grey;41;1;control;3;control;2015-07-01;Week 25;yes;12,8;15;4;-90,3;42;-92,7;90;;Nice circular pattern
+B&W circle on grey;41;2;10;1;7°/10°;;;;;;;114,8;22;84,7;70;;
+B&W circle on grey;41;3;60;5;37°/47°;;;;;;;-159,6;11;-147,9;63;;
+B&W circle on grey;42;1;5;4;4°/5°;2015-07-01;Week 25;yes;26,6;12;2;-134,9;20;-123,0;43;;
+B&W circle on grey;42;2;40;1;27°/35°;;;;;;;10,4;15;35,3;41;;
+B&W circle on grey;42;3;20;2;14°/20°;;;;;;;-2,9;13;19,1;37;;
+B&W circle on grey;43;1;10;3;7°/10°;2015-07-01;Week 25;no;36,7;16;0;4,4;33;22,8;79;;Been in Y-maze since 2015-06-26
+B&W circle on grey;43;2;5;1;4°/5°;;;;;;;142,9;47;160,8;69;;
+B&W circle on grey;43;3;60;2;37°/47°;;;;;;;-14,0;32;3,5;70;;Nice view of 60cm target. Animal “pivoted” around a point.
+B&W circle on grey;44;1;40;3;27°/35°;2015-07-01;Week 25;no;20,5;16;0;9,2;34;-27,3;65;;Been in Y-maze since 2015-06-26. Animal heads for centre of target initially, then changes direction towards outer edge.
+B&W circle on grey;44;2;20;4;14°/20°;;;;;;;125,7;26;155,3;53;;
+B&W circle on grey;44;3;control;5;control;;;;;;;-163,6;17;-139,4;41;;
+B&W circle on grey;45;1;5;2;4°/5°;2015-07-02;Week 25;no;21,3;15;2;-113,1;254;-118,5;283;;Rotates while walking away. Why would this be needed in a radially symmetric animal?
+B&W circle on grey;45;2;60;3;37°/47°;;;;;;;-53,8;44;-21,0;83;;Animal rotates again.
+B&W circle on grey;45;3;40;5;27°/35°;;;;;;;151,6;24;143,2;53;;
+B&W circle on grey;46;1;20;1;14°/20°;2015-07-02;Week 25;no;22,5;15;3;-95,9;64;-154,5;118;;
+B&W circle on grey;46;2;control;2;control;;;;;;;-12,0;113;17,7;144;;Stopped recording late. Animal walks around arena.
+B&W circle on grey;46;3;10;4;7°/10°;;;;;;;52,6;114;24,3;147;;
+B&W circle on grey;47;1;60;4;37°/47°;2015-07-02;Week 25;yes;13,7;16;1;27,8;103;44,0;139;;Animal moving back and forth
+B&W circle on grey;47;2;10;2;7°/10°;;;;;;;NA;NA;NA;NA;;Animal not responding, plus battery died, terminated experiment
+B&W circle on grey;47;3;20;3;14°/20°;;;;;;;NA;NA;NA;NA;;Skipped this trial.
+B&W circle on grey;48;1;control;4;control;2015-07-03;Week 25;no;26,6;17;3;7,8;110;31,4;137;;Nice shape from above
+B&W circle on grey;48;2;40;2;27°/35°;;;;;;;-166,0;50;-166,0;74;;
+B&W circle on grey;48;3;5;3;4°/5°;;;;;;;-165,0;30;-162,2;52;;
+B&W circle on grey;49;1;40;4;27°/35°;2015-07-03;Week 25;no;20,9;17;3;-34,5;31;9,0;73;;
+B&W circle on grey;49;2;20;5;14°/20°;;;;;;;-3,6;12;7,6;49;;Nice curved path in front of target.
+B&W circle on grey;49;3;control;1;control;;;;;;;29,6;27;11,9;58;;
+B&W circle on grey;50;1;10;4;7°/10°;2015-07-03;Week 25;no;23,7;15;2;162,5;105;109,9;149;;Reoriented animal at frame 139.
+B&W circle on grey;50;2;5;5;4°/5°;;;;;;;NA;NA;NA;NA;;Animal non-responsive, terminated experiment
+B&W circle on grey;50;3;60;2;37°/47°;;;;;;;NA;NA;NA;NA;;Animal non-responsive, terminated experiment
+B&W circle on grey;51;1;40;3;27°/35°;2015-07-03;Week 25;yes;34,7;14;5;-15,6;120;0,9;142;;
+B&W circle on grey;51;2;20;4;14°/20°;;;;;;;74,5;167;87,9;191;;
+B&W circle on grey;51;3;10;1;7°/10°;;;;;;;-157,3;154;-148,4;185;;
+B&W circle on grey;52;1;5;2;4°/5°;2015-07-06;Week 27;no;41,8;17;0;32,9;63;70,2;83;;Reoriented animal at frame 110.
+B&W circle on grey;52;2;60;1;37°/47°;;;;;;;-139,2;55;157,4;81;;
+B&W circle on grey;52;3;40;5;27°/35°;;;;;;;97,4;205;101,1;230;;Animal not responding, reoriented animal.
+B&W circle on grey;53;1;control;5;control;2015-07-06;Week 27;no;15,1;16;0;152,7;21;48,4;256;;Animal walked three full circles.
+B&W circle on grey;53;2;40;1;27°/35°;;;;;;;34,4;24;46,3;53;;
+B&W circle on grey;53;3;5;4;4°/5°;;;;;;;14,1;60;-15,0;92;;Interesting “waggle” before started walking. Stopped recording late. Animal walked up arena.
+B&W circle on grey;54;1;60;5;37°/47°;2015-07-06;Week 25;no;8,7;14;0;174,4;53;102,8;170;;
+B&W circle on grey;54;2;10;3;7°/10°;;;;;;;44,3;21;40,3;92;;
+B&W circle on grey;54;3;20;2;14°/20°;;;;;;;-19,4;13;-41,2;86;;
+Paired rectangles;55;1;6.27 All.;1;5°;2015-07-08;Week 27;no;37,3;18;1;26,4;282;13,5;304;plexiglass;
+Paired rectangles;55;2;75.2 All.;2;43°;;;;;;;-38,1;59;-31,6;72;black;
+Paired rectangles;55;3;25.07 All.;3;18°;;;;;;;173,1;11;-154,9;50;grey;
+Paired rectangles;56;1;50.13 All.;4;32°;2015-07-09;Week 21;no;13,3;17;1;-94,1;9;-92,0;52;grey;First animal for this trial did not respond yesterday. Redone trial with new animal: 2015-07-09.
+Paired rectangles;56;2;12.53 All.;5;9°;;;;;;;156,9;1;-121,3;34;grey;
+Paired rectangles;56;3;75.2 All.;3;43°;;;;;;;44,7;6;38,0;29;grey;
+Paired rectangles;57;1;25.07 All.;4;18°;2015-07-09;Week 21;yes;13,2;16;0;-103,4;98;-77,3;147;grey;
+Paired rectangles;57;2;50.13 All.;5;32°;;;;;;;54,9;20;-11,3;57;black;Nice approach to target.
+Paired rectangles;57;3;12.53 All.;1;9°;;;;;;;57,5;26;88,5;58;grey;
+Paired rectangles;58;1;6.27 All.;2;5°;2015-07-09;Week 23;yes;15,4;14;2;-72,5;194;72,7;274;grey;Animal contracts and expands while stationary, and sometimes as well when walking.
+Paired rectangles;58;2;25.07 All.;5;18°;;;;;;;155,6;111;168,2;186;grey;
+Paired rectangles;58;3;50.13 All.;1;32°;;;;;;;-41,4;138;-39,5;196;grey;
+Paired rectangles;59;1;12.53 All.;2;9°;2015-07-09;Week 25;yes;19,0;17;1;58,1;107;45,8;129;grey;
+Paired rectangles;59;2;6.27 All.;3;5°;;;;;;;-91,5;18;-81,9;43;grey;
+Paired rectangles;59;3;75.2 All.;4;43°;;;;;;;-12,8;242;15,0;265;black;Battery died. Found animal on black half of stimulus. Stop frame and final heading are extrapolations.
+Paired rectangles;60;1;50.13 All.;1;32°;2015-07-09;Week 25;yes;12,2;15;0;3,9;23;-11,8;63;black;High accuracy in this animal!
+Paired rectangles;60;2;12.53 All.;3;9°;;;;;;;37,4;18;-3,5;55;black;Nice search path. High accuracy in this animal!
+Paired rectangles;60;3;6.27 All.;4;5°;;;;;;;61,5;20;154,2;62;grey;
+Paired rectangles;61;1;75.2 All.;5;43°;2015-07-09;Week 27;no;30,0;14;2;-42,7;55;-41,5;82;grey;
+Paired rectangles;61;2;25.07 All.;1;18°;;;;;;;101,5;62;81,4;79;grey;
+Paired rectangles;61;3;12.53 All.;4;9°;;;;;;;-88,4;36;-88,2;50;grey;
+Paired rectangles;62;1;6.27 All.;5;5°;2015-07-09;Week 25;yes;19,6;14;3;-173,1;64;174,9;100;grey;
+Paired rectangles;62;2;75.2 All.;1;43°;;;;;;;39,6;40;49,3;88;grey;Started off in the right direction, then steered away from the white half of the pattern.
+Paired rectangles;62;3;25.07 All.;2;18°;;;;;;;78,4;51;69,9;262;grey;Animal moving in circles.
+Paired rectangles;63;1;50.13 All.;3;32°;2015-07-13;Week 27;no;32,9;17;0;28,0;168;32,4;184;grey;Date on folder containing sequence is wrong. Says 2014-01-01
+Paired rectangles;63;2;6.27 All.;1;5°;;;;;;;58,4;9;63,4;24;grey;
+Paired rectangles;63;3;75.2 All.;2;43°;;;;;;;-29,9;16;-3,4;30;black;
+Paired rectangles;64;1;25.07 All.;3;18°;2015-07-13;Week 27;no;41,9;14;0;104,7;562;69,9;582;grey;Date on folder containing sequence is wrong. Says 2014-01-01.
+Paired rectangles;64;2;50.13 All.;4;32°;;;;;;;-21,8;254;-15,0;267;black;Large and accurate animal.
+Paired rectangles;64;3;12.53 All.;5;9°;;;;;;;-123,0;336;-118,9;354;grey;
+Paired rectangles;65;1;6.27 All.;2;5°;2015-07-13;Week 27;no;18,7;16;2;-160,3;43;-24,4;143;plexiglass;Date on folder containing sequence is wrong. Says 2014-01-01
+Paired rectangles;65;2;25.07 All.;3;18°;;;;;;;-93,7;28;-86,6;69;grey;
+Paired rectangles;65;3;50.13 All.;5;32°;;;;;;;-107,8;30;-130,2;71;grey;
+Paired rectangles;66;1;12.53 All.;1;9°;2015-07-14;Week 27;no;19,4;17;5;-149,5;53;-128,7;93;grey;
+Paired rectangles;66;2;6.27 All.;2;5°;;;;;;;63,3;57;45,9;95;grey;
+Paired rectangles;66;3;75.2 All.;4;43°;;;;;;;-72,3;35;-67,1;73;grey;
+Paired rectangles;67;1;25.07 All.;1;18°;2015-07-14;Week 25;yes;22,1;15;2;54,0;129;-11,0;165;plexiglass;
+Paired rectangles;67;2;12.53 All.;2;9°;;;;;;;-162,5;87;-157,0;118;grey;
+Paired rectangles;67;3;6.27 All.;3;5°;;;;;;;149,0;46;119,6;81;grey;
+Paired rectangles;68;1;75.2 All.;4;43°;2015-07-14;Week 25;yes;22,2;14;0;-30,6;35;-18,7;67;black;Nice shape from above
+Paired rectangles;68;2;50.13 All.;2;32°;;;;;;;10,1;111;-1,2;138;black;
+Paired rectangles;68;3;12.53 All.;3;9°;;;;;;;-164,0;49;163,6;82;grey;
+Paired rectangles;69;1;6.27 All.;4;5°;2015-07-14;Week 25;yes;24,0;20;0;-90,2;151;-68,4;185;grey;
+Paired rectangles;69;2;75.2 All.;5;43°;;;;;;;-128,0;35;-138,4;60;grey;
+Paired rectangles;69;3;25.07 All.;1;18°;;;;;;;107,1;24;80,4;48;grey;
+Paired rectangles;70;1;12.53 All.;4;9°;2015-07-14;Week 27;yes;25,2;16;0;59,0;41;62,1;66;grey;
+Paired rectangles;70;2;6.27 All.;5;5°;;;;;;;-163,9;36;-143,7;55;grey;
+Paired rectangles;70;3;75.2 All.;1;43°;;;;;;;-25,4;18;-14,9;35;black;
+Paired rectangles;70;1;25.07 All.;2;18°;;;;;;;17,1;32;-1,4;55;black;Nice turn back to the target.
+Paired rectangles;70;2;50.13 All.;3;32°;;;;;;;-99,1;24;-15,9;54;black;
+Centred black rectangles;71;1;6.27 C;1;5°;2015-07-20;Week 29;no;18,1;13;0;88,5;17;117,0;45;grey;
+Centred black rectangles;71;2;75.2 C;2;43°;;;;;;;10,6;13;-3,7;33;black;
+Centred black rectangles;71;3;25.07 C;4;18°;;;;;;;-135,6;10;-146,8;35;grey;
+Centred black rectangles;72;1;white;4;37°;2015-07-20;Week 29;no;23,5;16;0;79,8;47;59,9;75;grey;nice curved path, centred on white stimulus.
+Centred black rectangles;72;2;50.13 C;5;32°;;;;;;;-67,2;12;67,8;34;grey;
+Centred black rectangles;72;3;12.53 C;3;9°;;;;;;;108,2;13;105,4;34;grey;
+Centred black rectangles;73;1;75.2 C;3;43°;2015-07-20;Week 29;no;23,5;16;0;154,4;38;165,5;63;grey;
+Centred black rectangles;73;2;25.07 C;5;18°;;;;;;;-149,0;35;-169,0;55;grey;
+Centred black rectangles;73;3;white;1;37°;;;;;;;85,2;32;64,5;54;grey;nice curved path, centred on white stimulus.
+Centred black rectangles;74;1;50.13 C;2;32°;2015-07-20;Week 29;no;28,6;15;0;22,2;33;1,9;51;black;Nice course adjustment, right in front of stimulus.
+Centred black rectangles;74;2;12.53 C;5;9°;;;;;;;-153,9;16;-153,3;33;grey;
+Centred black rectangles;74;3;6.27 C;4;5°;;;;;;;128,1;17;135,9;33;grey;Nice shape.
+Centred black rectangles;75;1;25.07 C;1;18°;2015-07-20;Week 29;no;18,7;18;0;4,9;28;-1,2;57;black;Arms bend laterally at final approach.
+Centred black rectangles;75;2;white;3;37°;;;;;;;90,9;17;87,1;57;grey;Nice response! nice curved path, centred on white stimulus.
+Centred black rectangles;75;3;50.13 C;5;32°;;;;;;;9,2;11;2,4;43;black;Nice response!
+Centred black rectangles;76;1;12.53 C;1;9°;2015-07-21;Week 29;no;18,6;18;0;-5,1;56;-2,7;96;black;Interesting “waggle” before started walking.
+Centred black rectangles;76;2;6.27 C;2;5°;;;;;;;-35,0;28;-32,2;64;plexiglass;
+Centred black rectangles;76;3;white;3;37°;;;;;;;106,1;26;75,4;60;grey;nice curved path, centred on white stimulus.
+Centred black rectangles;77;1;white;2;37°;2015-07-21;Week 29;no;25,7;16;0;-18,1;70;-15,4;91;white;
+Centred black rectangles;77;2;50.13 C;1;32°;;;;;;;0,5;46;-6,8;64;black;
+Centred black rectangles;77;3;12.53 C;4;9°;;;;;;;-155,6;17;-150,1;36;grey;
+Centred black rectangles;78;1;6.27 C;5;5°;2015-07-21;Week 29;no;28,7;13;1;44,7;18;106,5;44;grey;
+Centred black rectangles;78;2;75.2 C;1;43°;;;;;;;76,5;11;10,6;36;black;Nice change in direction toward target.
+Centred black rectangles;78;3;25.07 C;2;18°;;;;;;;53,6;14;23,6;35;plexiglass;
+Centred black rectangles;79;1;50.13 C;3;32°;2015-07-21;Week 29;no;17,5;17;3;10,1;35;0,8;57;black;
+Centred black rectangles;79;2;12.53 C;1;9°;;;;;;;-68,6;12;-42,2;38;grey;
+Centred black rectangles;79;3;6.27 C;2;5°;;;;;;;-154,3;16;157,3;38;grey;
+Centred black rectangles;80;1;75.2 C;3;43°;2015-07-21;Week 29;no;24,8;16;0;-0,9;81;-0,7;100;black;
+Centred black rectangles;80;2;25.07 C;4;18°;;;;;;;-71,3;157;-66,8;177;grey;
+Centred black rectangles;80;3;white;5;37°;;;;;;;-66,6;13;-52,5;35;grey;
+Centred black rectangles;81;1;12.53 C;2;9°;2015-07-21;Week 29;no;21,1;17;1;176,9;15;165,6;52;grey;
+Centred black rectangles;81;2;6.27 C;3;5°;;;;;;;1,4;27;73,6;64;grey;
+Centred black rectangles;81;3;75.2 C;5;43°;;;;;;;2,0;15;41,3;46;grey;Animal turned away from target. Because of white?
+Centred black rectangles;82;1;25.07 C;1;18°;2015-07-21;Week 29;no;23,0;16;0;35,8;21;117,5;61;grey;Accidentally wounded animal on collection.
+Centred black rectangles;82;2;white;2;37°;;;;;;;131,9;21;81,8;58;grey;
+Centred black rectangles;82;3;50.13 C;4;32°;;;;;;;-49,3;19;-149,9;69;grey;
+Centred black rectangles;83;1;6.27 C;4;5°;2015-07-21;Week 29;no;43,3;16;0;129,6;97;127,5;112;grey;
+Centred black rectangles;83;2;75.2 C;5;43°;;;;;;;34,4;104;23,6;116;white;Accidentally wounded animal when moving animal between experiments.
+Centred black rectangles;83;3;25.07 C;3;18°;;;;;;;-11,7;122;-2,9;137;black;
+Centred black rectangles;84;1;white;4;37°;2015-07-21;Week 29;no;15,0;15;0;145,6;22;131,8;76;grey;Reoriented animal. Two sequences..
+Centred black rectangles;84;2;50.13 C;2;32°;;;;;;;-59,0;12;-4,8;60;black;
+Centred black rectangles;84;3;12.53 C;3;9°;;;;;;;78,4;11;100,5;53;grey;
+Centred black rectangles;85;1;75.2 C;4;43°;2015-07-22;Week 29;no;23,3;16;4;-20,8;126;-10,7;160;black;"Animal did not respond, took new animal.
+Arms closest to stimulus tried to gain dominance.
+Very accurate animal."
+Centred black rectangles;85;2;25.07 C;5;18°;;;;;;;99,9;95;141,4;143;grey;
+Centred black rectangles;85;3;white;1;37°;;;;;;;81,9;48;90,9;100;grey;
+Centred black rectangles;86;1;50.13 C;4;32°;2015-07-22;Week 29;no;26,9;16;0;-45,0;18;-35,0;61;grey;Accidentally recorded video instead of time-series.
+Centred black rectangles;86;2;12.53 C;5;9°;;;;;;;-13,0;15;6,0;39;plexiglass;Accidentally recorded video instead of time-series.
+Centred black rectangles;86;3;6.27 C;1;5°;;;;;;;-20,0;11;-12,0;31;plexiglass;Accidentally recorded video instead of time-series.
+Centred black rectangles;87;1;75.2 C;2;43°;2015-07-22;Week 29;no;22,8;14;0;149,9;20;167,1;45;grey;
+Centred black rectangles;87;2;25.07 C;3;18°;;;;;;;86,3;26;105,0;50;grey;
+Centred black rectangles;87;3;50.13 C;1;32°;;;;;;;-23,3;9;-39,5;32;grey;
+Centred black rectangles;88;1;12.53 C;2;9°;2015-07-22;Week 29;yes;17,7;13;0;156,0;23;149,1;49;grey;
+Centred black rectangles;88;2;6.27 C;3;5°;;;;;;;123,0;26;130,4;53;grey;
+Centred black rectangles;88;3;75.2 C;4;43°;;;;;;;139,8;26;-148,3;57;grey;
+Centred black rectangles;89;1;white;5;37°;2015-07-22;Week 29;yes;19,5;18;0;-120,5;61;-151,1;106;grey;
+Centred black rectangles;89;2;50.13 C;3;32°;;;;;;;109,1;31;140,0;84;grey;
+Centred black rectangles;89;3;12.53 C;4;9°;;;;;;;-89,4;45;76,4;93;grey;
+Centred black rectangles;90;1;6.27 C;5;5°;2015-07-22;Week 29;no;33,5;16;0;136,1;49;144,3;78;grey;
+Centred black rectangles;90;2;75.2 C;1;43°;;;;;;;-4,7;37;-7,5;55;black;
+Centred black rectangles;90;3;25.07 C;2;18°;;;;;;;22,7;98;33,3;122;plexiglass;

@@ -1,0 +1,467 @@
+---
+title: "Crown-of-thorns starfish have true image forming vision"
+author: "Ronald Petie^1^, Anders Garm^1^, Michael R. Hall^2^"
+csl: biomed-central(4).csl
+output:
+  word_document:
+    reference_docx: style-ref-frontiers-in-zoology(2).docx
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: no
+  html_document:
+    keep_md: no
+header-includes:
+- \usepackage{setspace}
+- \usepackage{lineno}
+- \linenumbers
+bibliography: references4.bib
+---
+^1^Department of Biology, Marine Biological Section   
+University of Copenhagen   
+Universitetsparken 4   
+2100 Copenhagen Ø, Denmark     
+
+^2^Australian Institute of Marine Science   
+PMB 3, Townsville MC   
+Townsville 4810   
+Queensland, Australia   
+
+Correspondence and reprint requests:   
+Ronald Petie   
+tel: +46 73-672 25 85  
+e-mail:   
+Ronald Petie: ronald.petie@gmail.com   
+Anders Garm: algarm@bio.ku.dk   
+Michael R Hall: m.hall@aims.gov.au   
+
+Key words: *Acanthaster planci*, sensory biology, eyes, orientation
+\newpage
+
+```{r librarySource, echo=FALSE, message=FALSE}
+
+# Library and source statements
+
+# Packages
+library(bibtex)
+library(dplyr)
+library(ggplot2)
+library(grid)
+library(knitr)
+
+# Functions
+source(file.path("..", "Fun", "Just_circles03.R"))
+source(file.path("..", "Fun", "Circular_organiser04.R"))
+source(file.path("..", "Fun", "CreateSpace01.R"))
+source(file.path("..", "Fun", "My_ggplot_theme01.R"))
+```
+
+```{r importData, echo=FALSE, message=FALSE}
+
+# Prepare data
+# Read data file
+original <- read.csv(file.path("..", "Data", "COTS data AIMS04.csv"),
+                     sep=";", dec=",")
+
+# Select usefull collumns
+data <- select(original, type, stimulus.name, order, initial.heading,
+               final.heading)
+
+# First remove orders above 3, NA's and unused stimuli.
+selection <- filter(data, order <= 3, stimulus.name != "remove",
+                    is.na(final.heading) == F)
+
+```
+
+# Abstract
+## Background
+Photoreceptors have evolved numerous times giving organisms the ability to detect light and respond to specific visual stimuli. Studies into the visual abilities of the Asteroidea (Echinodermata) have recently shown that species within this class have a more developed visual sense than previously thought and it has been demonstrated that starfish use visual information for orientation within their habitat. Whereas image forming eyes have been suggested for starfish, direct experimental proof of true spatial vision has not yet been obtained.  
+
+## Results
+The behavioural response of the coral reef inhabiting crown-of-thorns starfish (*Acanthaster planci*) was tested in controlled aquarium experiments using an array of stimuli to examine their visual performance. We presented starfish with various black-and-white shapes against a mid-intensity grey background, designed such that the animals would need to possess true spatial vision to detect these shapes. Starfish responded to black-and-white rectangles, but no directional response was found to black-and-white circles, despite equal areas of black and white. Additionally, we confirmed that starfish were attracted to black circles on a white background when the visual angle is larger than 14°. When changing the grey tone of the largest circle from black to white, we found responses to contrasts of 0.5 and up. The starfish were attracted to the dark area's of the visual stimuli and were found to be both attracted and repelled by the visual targets.
+
+## Conclusions
+For crown-of-thorns starfish, visual cues are essential for close range orientation towards objects, such as coral boulders, in the wild. These visually guided behaviours can be replicated in aquarium conditions. Our observation that crown-of-thorns starfish respond to black-and-white shapes on a mid-intensity grey background is the first direct proof of true spatial vision in starfish and in the phylum Echinodermata. 
+\newpage
+
+# Background
+Light sensitivity can be found in echinoderms like sea urchins (Echinoidea), sea cucumbers (Holothuroidea), starfish (Asteroidea) and brittle stars (Ophiuroidea) [@millott_photosensitivity_1976]. Sea urchins respond to shadows with movements of their spines [@millott_sensitivity_1954; @millott_shadow_1960]. In addition, some sea urchins will cover themselves with objects in response to light [@millott_covering_1955], or display negative phototaxis. Even though sea urchins do not have eyes, species such as *Echinometra lucunter* L., *Echinometra viridis* and *Strongylocentrotus purpuratus* nevertheless orient towards visual targets and have been suggested to have a limited form of spatial vision, possibly by means of combining a dermal light sensitivity with shading by the spines [@blevins_spatial_2004; @yerramilli_spatial_2010]. However, these sea urchin studies were examining orientational capabilities towards black circles on a light background; a stimulus that can be detected without using spatial resolution vision by following the gradient in light intensity. Other authors found that only certain regions of the sea urchin dermis were responsive to visual stimulation [@millott_sensitivity_1954; @millott_photosensitivity_1959] which could be explained by the relatively high opsin and pax 6 concentrations found in the tube feet of sea urchins [@lesser_sea_2011; @ullrich-luter_c-opsin_2013]. In addition, depressions in the skeleton of the sea urchin could provide the shading needed for directional sensitivity [@ullrich-luter_unique_2011], providing an alternative hypotheses to the shading by the spines presented above.     
+
+Similarly, brittle stars have been found to change colour [@hendler_brittlestar_1984] in response to changes in illumination and display phototaxis [@hendler_brittlestar_1984; @delroisse_novo_2016]. Morphological and optical investigations suggest that calcite structures in the epidermis of brittle stars [@aizenberg_calcitic_2001] can be used to focus light onto putative light sensitive neurons. However, physiological and behavioural data proving light reception in these structures are still lacking [@hendler_fine_1987].     
+
+Eyes have even been found on a sea cucumber, *Opheodesoma spectabilis*, and are associated with negative phototaxis [@berrill_ethology_1966]. The eyes are simple ocelli [@yamamoto_fine_1978] and are thought to provide information about the intensity and direction of sunlight.      
+
+The starfish eye represents the most advanced light receptive structure in the echinoderm phylum and was first described more than 200 years ago by Vahl in 1780, cited by Smith [@smith_nervous_1937]. The starfish eye has been described as the optic cushion, or terminal eye spot and arises from the first developing, primary podium [@atwood_larval_1973; @morris_development_2009]. This results in one eye at the base of the terminal tube foot, at the tip of each and every arm. In starfish, tube feet have a diversity of functions and are responsible for adhesion [@paine_adhesion_1926], locomotion [@kerkut_forces_1953], respiration and secretion [@fenner_respiratory_1973] and they are prominent sense organs that contain many sensory cells [@burke_podial_1980]. Starfish have been found to respond to mechanical [@kerkut_mechanisms_1954] and olfactory stimulation [@sloan_arm_1980; @dale_coordination_1999], both of which are senses that can augment vision during orientation tasks.      
+
+Some authors argue that calcite structures in the epidermis could provide starfish with a second eye-based visual system, similar to the one found in brittle stars. Present day starfish [@vinogradova_calcitic_2016], as well as fossilised starfish [@gorzelak_microlens_2014], were described to have putative calcite lenses. However, in contrast to brittle stars, no neurons have been described to be associated with these putative lenses which making it problematic to assign function.    
+
+Starfish have also been reported to have extra-ocular light sensitivity using a dermal light sense. The starfish *Asterias amurensis* [@yoshida_phototactic_1968; @yoshida_compound_1966] and *Asterias forbesi* [@rockstein_role_1956] have been shown to exhibit phototactic movements in response to visual stimulation in both intact and blinded animals, demonstrating that eyes are not a requirement for photaxis and extra-ocular photoreception suffices. Dermal light sensitivity in starfish is less sensitive than vision using the eyes [@yoshida_compound_1966], which would make it ineffective at visual tasks requiring spatial resolution [@nilsson_eye_2013] and is therefore only likely to be involved in simple visual tasks like phototaxis.
+
+Compound eyes have been found in many of the examined starfish species, however only recently the function of the compound eyes of starfish was revealed in the blue Star, *Linckia laevigata*, which was shown to orient towards coral reefs using their compound eyes [@garm_visual_2014]. Blinded starfish, with their extra-ocular photoreception and olfaction intact, were unable to navigate towards the reefs. Similar results have been obtained in the crown-of-thorns starfish, *Acanthaster planci* [@petie2016; @sigl_role_2016]. With these findings in mind, it is clear that the system supporting more advanced visually guided behaviours in starfish is the compound eye.   
+
+The corallivorous crown-of-thorns starfish, is probably best known for exhibiting large population fluctuations. The abundance of this starfish can increase by six orders of magnitude within 1 to 2 years [@birkeland_acanthaster_1990] and these outbreaks have been reported to be a major cause of coral mortality throughout the Indo-Pacific with flow-on ecosystem consequences [@death_27year_2012; @pratchett_recent_2010; @osborne_disturbance_2011]. Although much is known of their ecology, much less is known of their sensory biology and how this relates to their interaction with their environment. As has been reported in other starfish species [@garm_visual_2014; @yoshida_compound_1966; @eakin_effects_1979] crown-of-thorns starfish have eyes and respond to visual stimulation [@petie2016; @sigl_role_2016]. Each compound eye has on average 250 eye cups (ommatidia) for animals with a diameter of about 35 cm [@petie2016]. Each ommatidium contains two cell types: unpigmented photoreceptor cells and pigmented supportive cells that make up the pigment screen surrounding each ommatidium [@eakin_effects_1979; @garm_visual_2014]. The eye of the crown-of-thorns starfish is similar to the eye of *L. laevigata* [@garm_visual_2014], with the exception of the visual field which is flattened horizontally and measures approximately 100° wide and 30° high [@petie2016].  In addition, the spatial resolution of *A. planci* is better than the 16° found for *L. laevigata* and measures approximately 8°. The eye of the crown-of-thorns starfish is situated on a movable knob [@beer2016] which, compared to *L. laevigata*, increases the degree of control over the eye. *L. laevigata* lives on the same coral reefs as the crown-of-thorns starfish and has 5 arm, whereas the crown-of-thorns starfish has between 7 to 23 arms [@moran_acanthaster_1988], which combined with the visual fields implies that both species have surround vision.
+
+In this paper we set out to investigate which visual cues are used by the crown-of-thorns starfish for visual orientation. We present behavioural data from aquarium experiments, where the visual scene was controlled in detail. We tested whether the starfish use simple phototaxis or rely on true spatial vision for visual orientation tasks.       
+
+# Results and discussion
+
+```{r speed, echo=FALSE, message=FALSE, error=FALSE}
+
+# Load speed data and statistics
+load(file.path("..", "Output", "Directional data-AIMS", "Arena_speeds.RData"))
+
+```
+## Spatial vision
+Orientation towards gradients in light intensity by means of phototaxis is the simplest form of directional photoreception [@dusenbery_sensory_1992; @nilsson_eye_2013]. Phototaxis controls the simplest visually guided behaviours, requires the simplest systems for directional photoreception [@nilsson_eye_2013] and is, for instance, found in cnidarian larvae [@nordstrom_simple_2003] and nematodes [@burr_scanning_1990]. Two basic mechanisms can enable an organism to use light intensity distributions as orientation cues. Animals can use a sequence of samples from the environment (klinotaxis), or alternatively acquire information from receptor arrays, where each element in the array samples a different area in space (tropotaxis) [@dusenbery_sensory_1992] and information about the distribution of light is acquired instantaneously. In the latter case true spatial vision and image formation is implemented and this is what was tested for in the following experiments.  
+
+Detailed examinations of the visual capabilities of the crown-of-thorns starfish were conducted under controlled conditions in a circular behavioural arena (Fig. 1) which itself was situated in a large aquarium tank. The visual environment in the arena was designed such that the stimuli were detectable only by means of true spatial vision. We found that starfish were attracted to paired black and white rectangles on a grey background  with 32° and 43° initial angular heights (Fig. 2, table 1), while they did not respond to smaller stimuli. Note that in all circular diagrams only statistically significant mean headings are accompanied by the 95% confidence intervals. Further details can be found in table 1. The black rectangle was positioned left of the white one (See Fig. 1b) and animals were found to orient towards the black rectangle, shown by the mean vectors which were directed left of centre (Fig. 2d,e). This is the first direct proof that starfish use true spatial vision for the detection of visual targets, since the average intensity of light reflected off the stimuli was the same as the grey background. Additionally, it shows that crown-of-thorns starfish prefer to orient towards dark objects. This is in line with the observations on *A. planci* and *L. laevigata* that are attracted to coral reefs, which appear dark when filtered through the animals' spectral sensitivity and spatial resolution [@garm_visual_2014; @petie2016]. Starfish did not respond to the control stimulus, a transparent Plexiglas sheet, whether presented on a grey background (Fig. 4f) or a white background (Fig. 6f).     
+
+The response to black rectangles centred in a white square, presented on a grey background (Fig. 3, table 1), resembled the response to the previous experiment, although, high proportion of the animals moved away from the stimulus, resulting in an axially directed response. Animals responded to the smallest stimulus of 5° and the largest two of 32° and 43°. Axial responses occur more frequently in echinoderms and have also been observed in sea urchins [@yerramilli_spatial_2010], brittle stars [@delroisse_novo_2016] and other starfish [@yoshida_phototactic_1968]. The response to the 5° target cannot be readily explained. If the minimal object size that evokes a response really is 5°, it is to be expected that there would have been responses to all larger stimuli in the same experiment and other similar sized stimuli, but this was not observed. Regardless of whether the animals are repelled or attracted, the stimulus has to be visually detected, and hence this experiment also confirms that the crown-of-thorns starfish uses true spatial vision.   
+
+```{r loadSizeData, echo=F, message=F, error=F}
+
+load(file.path("..", "Output", "Sizes", "Size_data.RData"))
+
+```
+
+The axial nature of the responses observed could indicate a dual nature in response behaviours. We hypothesise that crown-of-thorns starfish are sometimes attracted to dark shapes as this is how their shelter and food source, the coral reef, would appear. However, dark shapes, especially moving ones, could also represent potential predators, which would need evasive or defensive action. Know predators of juvenile and adult crown-of-thorns starfish are: the triton snail, *Charonia tritonis* [@pearson_preliminary_1969], the Maori wrasse, *Cheilinus undulates* [@randall_food_1978; @walker_food_1978], damselfishes [@cowan_predation_2016] and the vagabond butterfly fish, *Chaetodon vagabondus* (personal observations). The size of the starfish could be an important factor determining their behavioural response pattern, as small starfish are known to remain well hidden. Larger starfish appear to be less prone to predatory attack due to their array of sharp spines and appear more often fully exposed [@death_factors_1998]. Small starfish could therefore be more attracted to dark hideouts than larger ones. However, we did not find any difference in response heading when grouping the animals into progressively increasing 10 cm size bins (circular ANOVA, F~`r circular.anova$df[1]`,`r circular.anova$df[3]`~=`r round(circular.anova$statistic, 2)`, p=`r round(circular.anova$p.value ,2)`), at least under aquarium conditions. It is possible that the animals' previous experience in combination with its behavioural preference could influence the "motivational state" of the animal and therefore the response to the stimulus. A similar ambiguous behaviour can be found in small predators that need to decide whether an object is to be attacked or avoided [@ewert1970neural; @barker2015sensorimotor]. Making decisions to avoid visible objects can be mediated by the olfactory sense, as observed in sea urchins that are capable of distinguishing between a nearby active and inactive predator by using their sense of smell [@phillips_chemical_1978].       
+
+Starfish were also presented with black-and-white circles against a grey background. Under these conditions the starfish did not show any directional response to the stimuli (Fig. 4), even though the area of black and white was equal to the previous two experiments. A possible explanation for the lack of response to the black-and-white circles on a grey background could be found in the white rim of the stimulus. The crown-of-thorns starfish has a narrow visual streak directed approximately 30° above the horizon [@beer2016]. As the animal moves from the centre of the arena, at a distance of 80 cm from the wall, to a position 20 cm in front of the stimulus, the relative area of white in the field of view of the eye directed towards the circle would increase in size four times (Fig. 5) compared to initial condition. Combining this with our observation that crown-of-thorns starfish prefers black over white it could imply that our circular stimulus gets increasingly unattractive as the animal moves closer.   
+
+## Response to black circles
+Starfish were presented with stimuli with the highest possible contrast: black circles on a white background. Starfish were attracted to black circles when the angular size of the stimulus was 14° and larger (Fig. 6, table 1). This indicates that the behavioural threshold for orientation towards these high contrast stimuli lies between an angular size of 7° and 14°. No directional response was observed for the control experiment (See Fig. 6f and table 1). The behaviour is similar to that found in the sea urchins *E. lucunter* and *E. viridis* [@blevins_spatial_2004], which were attracted to circles with a minimal angular height of 33°. Interestingly, the sea urchin *S. purpuratus* showed an axial response to a smaller target than the crown-of-thorns starfish, a 10° black circle [@yerramilli_spatial_2010]. Testing the animals with black circles on a white background provided a means of comparing the behaviour of crown-of-thorns starfish with that observed previously in sea urchins, it does not, however, provide a measure for the lower behavioural threshold for spatial resolution in starfish. It is important to note that dark stimuli that are smaller than the resolution of the eye would still cause a decrease in light intensity in at least one ommatidium, which could be detected by the animal. The mean walking speed for crown-of-thorns starfish when presented with the 37° target was `r round(speed.experiment[1,3], 0)` cm/min (SD=`r round(speed.experiment[1,4], 1)`, N=`r speed.experiment[1,2]`), which did not differ significantly from the `r round(speed.experiment[2,3], 0)` cm/min (SD=`r round(speed.experiment[2,4], 1)`, N=`r speed.experiment[2,2]`) observed for the control experiment (t-test, t=`r round(speed.test.tank$statistic, 2)`, p=`r round(speed.test.tank$p.value, 2)`).   
+
+```{r loadContrastData, echo=F, message=F}
+# Load contrast data
+load(file.path("..", "Figs", "Contrast", "Contrast.RData"))
+
+# Remove mean values from table
+final.contrasts <- filter(final.contrasts, description != "mean")
+```
+
+## Contrast sensitivity
+Contrasts were examined *in situ* within the coral reef environment on four different reefs and tested at different distances (Fig. 7). In general, contrast under water quickly diminishes with increasing distance [@lythgoe_visual_1968]. The best contrast found was at 1 m distance and determined as `r round(max(final.contrasts$contrast) ,2)` for  coral boulders. The blue stag horn coral (*Acropora* sp.) had the lowest visual contrast at 1 m of only `r round(max(final.contrasts$contrast[final.contrasts$description=="blue staghorn"]), 2)`. It had a very similar colour [@hochberg_spectral_2004] to the blue background and the branching growth pattern left a significant amount of background exposed which also decreases the contrast. Brown staghorn coral, which absorbs more blue light [@hochberg_spectral_2004], had a slightly higher contrast. At 1 m distance the average contrast for all reefs was `r round(mean(final.contrasts$contrast[final.contrasts$distance==1]), 2)` (SD=`r round(sd(final.contrasts$contrast[final.contrasts$distance==1]), 2)`, N=`r round(length(final.contrasts$contrast[final.contrasts$distance==1]), 2)`) which declined to `r round(mean(final.contrasts$contrast[final.contrasts$distance==5]), 2)` (SD=`r round(sd(final.contrasts$contrast[final.contrasts$distance==5]), 2)`, N=`r round(length(final.contrasts$contrast[final.contrasts$distance==5]), 2)` ) at 5 m. At 10 m the contrast was below detection levels of the camera.  
+
+The contrast sensitivity of starfish was assessed in aquarium experiments by presenting the animals with full sized circular stimuli (angular diameter: 37°) with decreasing contrast against a white background (Fig. 8, table 1). We found that animals responded to stimuli with contrasts between 0.9 and 0.5, and were attracted to contrasts of 0.9 and 0.7, while they showed an axial response to stimuli with a contrast of 0.5. This implies that the behavioural threshold for contrast sensitivity lies somewhere between 0.3 and 0.5. It is unclear if the deviating response to contrasts of 0.5 has a functional relevance. As a comparison, cuttlefish are able to respond to contrast differences of only 0.15 under laboratory conditions [@mathger_color_2006] whereas humans have been found to detect contrast differences of just 0.005 [@kelly_visual_1977]. It needs to be noted that in case of behavioural experiments with animals there can be a gap between the detection threshold and the behavioural threshold, whereas this is usually not the case in human experiments.   
+
+Crown-of-thorns starfish have been found to readily visually detect a coral reef when placed one meter in front of it [@petie2016]. At this distance the highest measured contrast of `r round(max(final.contrasts$contrast), 2)` is in the range of the contrast sensitivity threshold of between 0.3-0.5 observed in the behavioural arena. This indicates that the behaviours observed in the arena are similar to what is observed in the wild. The angular height of the grey stimulus circle is comparable to the 45° which a coral reef of 1 m would measure from a distance of 1 m. However, from a low benthic perspective a coral reef would usually provide a wider visual stimulus horizontally. A wider stimulus would likely be attractive at a lower contrast, since it would be visible to more of the eyes. If visual information is integrated in a manner similar to the mechanism proposed for olfaction [@dale_coordination_1999], stimulating more eyes would result in more accurate orientation towards the stimulus. It could also explain why crown-of-thorns starfish so readily orient towards reefs at even lower contrasts. Future investigations on this aspect should focus on testing a greater range of stimuli widths and contrasts.   
+
+## Sensory biology
+To date, the visual ecology of starfish has been primarily studied in the blue star [@garm_visual_2014] (*L. laevigata*) and the crown-of-thorns starfish [@petie2016; @sigl_role_2016]. Both species inhabit a similar habitat and have comparable eyes. As smaller crown-of-thorns starfish (< 30 cm) are reported to be cryptic during the day and more active during the night [@death_factors_1998], the question arises whether this starfish can use visual cues at night. The blue star was reported to be unable to use vision on a starry, but moonless, night [@garm_visual_2014], which makes it plausible that the crown-of-thorns starfish is also unable to use vision at similar intensities. It would, however, be interesting to test the visual navigational capabilities of both species at slightly higher light intensities, such as increasing light intensity up to full moon intensities. It is clear that both species can use visual orientation cues during the day, possibly to find their way back to the reef in case they have strayed off it during the night. Or, in case of the crown-of-thorns starfish, an individual could relocate the reef after it has been chased off by animals defending corals, such as guard crabs [@mckeon_species_2014].
+
+# Conclusions
+Olfaction has been considered to be the singular dominant sensory modality in starfish [@romanes_observations_1883; @kerkut_mechanisms_1954; @beach_spawning_1975], while it was assumed that any light guided behaviour would be restricted to simple phototaxis [@yoshida_phototactic_1968; @yoshida_compound_1966; @rockstein_role_1956]. Our experiments provide proof for the use of true spatial vision for orientation, and show differences in response depending on the spatial pattern of the stimulus. Vision, however, is only going to be effective in close range detection of objects since visual contrast rapidly degrades over distance under water. Vision and olfaction likely complement each other, where olfaction would be much more effective over longer distances. As the starfish approaches a physical structure, which may have attracted it due to olfactory stimulation, vision would become the dominant cue since olfaction is less effective in the turbulent flow patterns that can occur around large objects at close range [@dusenbery_sensory_1992; @weissburg_life_1993].
+
+
+```{r animalData, echo=FALSE, message=FALSE}
+
+# Load data:
+
+#-------------------------------------------------------------------------------
+# 1. Prepare animal stats data frame
+animal.stats <- 
+  select(original, type, animal.id, used.before, animal.diameter) %>%
+  filter(!is.na(animal.diameter))
+
+# Some animals were used in more than one experiment. Omit.
+animal.stats <- filter(animal.stats, used.before == "no")
+
+#-------------------------------------------------------------------------------
+# 2. Load captivity stats
+load(file.path("..", "Figs", "Captivity", "Captivity.RData"))
+captivity <- filter(captivity, !is.na(animal.diameter))
+
+```
+
+# Methods
+## Contrast measurements in the natural habitat
+The contrast measurements were conducted on Lizard Island Research Station, Australia, on 10 and 11 August 2015. The contrast measurements were conducted around Horseshoe Reef (-14.687109 S, 145.444069 E) and in the lagoon directly south of Lizard Island (-14.694265, 145.454788 E). In order to measure the contrast between coral boulders and the surrounding water as perceived by the starfish, we placed a blue filter in front of the lens of a *GoPro Hero 4 SILVER* camera (San Mateo, California, USA). The blue filter was a *172 Lagoon Blue filter* (Lee filters, Hampshire, UK) with a transmittance curve closely matching the spectral sensitivity of the eye of the animal (Supplementary Fig. 1). From 1 to 10 m distance pictures of the reef were taken under water with 1 m intervals. This was done twice for an isolated small reef, once with the sun in the back and once with the sun in the face, for a large boulder coral and separately for blue and brown staghorn coral. The contrasts were calculated from the digital images by converting the colour images into 8-bit grey scale images in *ImageJ*. The contrast was calculated as Weber contrasts since this method is best suited for calculating contrasts of objects against a uniform background:   
+
+$$ Contrast = \frac{I_{background} - I_{stimulus}}{I_{background}} $$   
+
+where *I* is the measured light intensity. The average pixel value of the sea in the background was used as *I~background~* and the average pixel value of the reef of interest as *I~stimulus~*. Each location was measured three times and contrast values were averaged.    
+
+## Behavioural experiments
+### Animals
+
+```{r starfishArmData, echo=F, message=F}
+
+# Load data
+load(file.path("..", "Output", "Arm_count_statistics.RData"))
+
+```
+
+Animals were collected from the Great Barrier Reef off the coast of Cairns, Australia, by the Australian Marine Park Tourist Operators (AMPTO) crown-of-thorns starfish control program, and transported to the Australian Institute of Marine science (AIMS) in Townsville, Australia. The average water temperatures at the collection sites ranged from an average of 27°C in May to 23°C in July. In the aquaria, the starfish were maintained in holding tanks with running, filtered seawater with a temperature of 24°C and a salinity of 35‰. In total `r length(levels(factor(animal.stats$animal.id)))` starfish were used and some animals were used in two experiments (See Supplementary table 1). The starfish had a mean diameter of `r round(mean(animal.stats$animal.diameter, 0))` cm (min=`r round(min(animal.stats$animal.diameter), 0)`, max=`r round(max(animal.stats$animal.diameter), 0)`). The animals where not fed whilst held in the aquaria, but were used within on average `r round(mean(captivity$captivity.days), 0)` days of arriving at AIMS (min=`r round(min(captivity$captivity.days), 0)`, median=`r round(median(captivity$captivity.days), 0)`, max=`r round(max(captivity$captivity.days), 0)`). The starfish had between `r min(original$no.arms, na.rm=T)` and `r max(original$no.arms, na.rm=T)` arms (median=`r median(arm.data$no.arms, na.rm = T)`) and there was no difference in the number of arms, and thus the number of eyes per animal, between experiments (one way ANOVA, F~`r arm.aov[[1]][["Df"]][[1]]`,`r arm.aov[[1]][["Df"]][[2]]`~=`r round(arm.aov[[1]][["F value"]][[1]] ,2)`, p=`r round(arm.aov[[1]][["Pr(>F)"]][[1]] ,2)`).      
+
+```{r lightArena, echo=FALSE, message=FALSE}
+# Light intensity at arena perimeter
+perimeter <- c(2550, 2300, 2300, 2330, 2370)
+```
+
+### Arena
+The behavioural arena consisted of five white 1x1 m PVC sheets connected together to form a ring which had a circumference of 5 m, a diameter of 160 cm and a height of 1 m (Fig. 1a, c). The sheets were 3 mm thick and the water depth was 1 m. The arena was situated indoors in a 4 m diameter tank. The arena was lit from above with a full spectrum light emitting plasma (LEP) lamp (Model: GRE412R1C1WHC1101, Luxim, Sunnyvale, CA, USA). The light intensity in the arena centre, at the bottom, measured 2700 lux while it measured `r signif(mean(perimeter), 3)` lux (SD=`r signif(sd(perimeter), 3)`, N=`r length(perimeter)`) at the perimeter. Light intensities were measured using the luxmeter *amprobe lm-120* (Amprobe test tools Europe, Glottertal, Germany). The bottom of the arena consisted of a PVC plate with a 20 cm grid drawn onto it. The visual stimuli were attached to a see-through Plexiglas sheet using white Velcro. The stimuli were presented to the animals by securing the Plexiglas sheet to the arena wall with custom-made clamps, matching the background colour of the arena. Stimuli were presented in semi-random order and were positioned in the middle of one of the five PVC sheets of the arena, making sure that each stimulus was presented at each location for the same number of times.   
+
+
+```{r greyBackground, echo=FALSE, message=FALSE}
+# Calibration of grey background cloth
+
+# Measured light intensities in lux, for printed samples of black, white and grey
+grey <- data.frame(black = c(1.06, 1.06, 1.12, 1.06, 1.06),
+                   white = c(27.4, 28.4, 28.5, 28.4, 29.3),
+                   grey.print = c(14.98, 15.6, 15.6, 15.2, 15.97))
+
+# Calculate mid intensity
+grey$mid.intens <- (grey$black + grey$white) / 2
+
+# Calculate percentages
+grey$percentage <- 100*grey$grey.print/grey$mid.intens
+
+```
+
+### Stimuli
+Starfish were tested against a total five sets of stimuli (Fig. 1b) all of which were attached to a transparent Plexiglas sheet and placed with the lower edge on the arena floor. All stimuli and the mid-intensity grey background (discussed below), were printed at *Lotsa - Print & Signage* (Townsville, Australia) on a vinyl, water proof banner. The simplest stimuli used were black circles on a white background. The circles had angular heights of 4°, 7°, 14°, 27° and 37°, seen from the middle of the arena. In addition we presented a control stimulus consisting only of the Plexiglas sheet without a stimulus pattern. For the contrast sensitivity experiment five 37° high circles with different grey tones were presented against a white background. The contrasts of the circles were calculated as described above and were: 0.1, 0.3, 0.5, 0.7 and 0.9.      
+
+Additionally, three different black-and-white stimuli were presented against a mid-intensity grey background which had a reflected light intensity exactly between those found for black and white. Viewed under the light source used in the experiments, the reflected light intensity measured `r signif(mean(grey$percentage), 3)`% (SD=`r signif(sd(grey$percentage), 3)`, N=`r length(grey$percentage)`) of the real mid-intensity grey value. The three stimuli were: a black rectangle next to a white rectangle, a black rectangle centred inside a white square, and a black circle inside a white circle (Fig. 1b). In all of the black-and-white patterns the area of white was equal to the area of black, which made the intensity of light reflected off the entire stimulus equal to the mid-intensity grey background. The size of the black-and-white stimuli was chosen such that the black part had the same area as the purely black circles. For the paired black and white rectangles, the black rectangle was always presented left of the white.       
+
+### Protocol
+Aquaria experiments were conducted between May and August 2015. After  the stimulus was placed on one of five evenly spaced stimulus locations on the arena wall, a starfish was collected from the holding tanks and placed in the middle of the arena (Fig. 1). It was positioned with the oral side down and allowed to move freely. When the animal touched the arena wall the location was recorded. The angle between: (1) the stimulus, (2) the centre of the arena and (3) the animals' final location was taken as the heading of the response. By measuring the angle in this way, the recorded response angle does not depend on the position where the stimulus was placed. Each animal was presented with a maximum of three stimuli, after which it wasn't used for that experiment again. If animals were used again in another experiment they were allowed at least one day rest.     
+
+### Data recording and analysis
+The response was recorded from 1 m height at the water surface using the *GoPro* camera inside a dive housing (Fig. 1c). An *Inon UFL-G140* fish eye lens (Kamakura, Japan) was used to enable us to capture the entire arena floor. The lens was mounted onto an *Inon SD Mount Cage* and the *GoPro* camera was placed inside this mount cage. The camera floated on the surface using a Styrofoam float, and was centred in the arena using transparent fishing line. Since the LEP lamp was also centred the float unavoidably casts a shadow on the bottom of the arena (See Fig. 1c). The control experiments (Fig. 1d, 4f, 6f), show that the animals do not use this shadow as an orientation cue.    
+
+The behaviour of the animals was recorded as a time-lapse series with a five second interval between the images. Image sequences were manually analysed using *ImageJ* (version: 1.47n) and the resulting data was analysed in *RStudio* (version: 0.98.1103) using custom written scripts for *R* (version 3.2.2) using the packages: *circular, dplyr, ggplot2, knitr* and *tidyr*.    
+
+### Statistical analysis
+The directionality of the data was tested using the Rayleigh test from the R package *circular*. In the Rayleigh test, the null hypothesis tests for a random distribution of headings and the alternative hypothesis for a non-random distribution of the headings. Applying the Rayleigh test to the original headings tests for angular directionality in the data. By multiplying the original headings by two, followed by a Rayleigh test, axial directionality of the data was tested instead. All t-tests were confirmed by a Mann-Whitney test and all ANOVA's by a Kruskall-Wallis test. The threshold for significance was set to 5%.
+
+# Declarations
+## Ethics approval and consent to participate
+All animals collected and held under permit under the Great Barrier Reef Marine Park Regulations 1983 (Commonwealth) and Marine Parks Regulation 2006 (Queensland), Permit no. G09/30237.1.     
+All procedures were conducted under licenses provided by the Animal Care and Protection Act 2001 (Queensland) and the Australian Code for the Care and Use of Animals for Scientific Purposes (2013).     
+All experiments were conducted under approval by the AIMS Ethics Committee and SeaSim (Aquarium) Operational Committee (Australian Institute of Marine Science).
+
+
+## Consent for publication
+Not applicable
+
+## Availability of data and material
+All data, manuscript files and analysis scripts are available from the Zenodo Repository: http://dx.doi.org/10.5281/zenodo.xxxxx.
+
+## Competing interests
+The authors declare that they have no competing interests.
+
+## Funding
+This work was supported by the Danish Council for independent Research | Natural Sciences [4002-00284] to RP and by the Carlsberg Foundation (grant# 2013_01_0251) to AG. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.
+
+## Authors' contributions
+RP and AG designed the experiments. RP performed the experiments, analysed the data and wrote the first draft of the manuscript. MRH provided the animals, the facilities for the experiments and assisted in the experiments at AIMS. All authors read and approved the final manuscript.
+
+## Acknowledgements
+We would like to thank Sam Hapke and Tory Chase for their help with the experiments on Lizard Island. In addition we would like to thank Vanessa Messmer, Oona Lönnstedt, Amy Cox for their help collecting additional animals at Lizard Island. Animals for the experiments at AIMS were provided by the COTS Control Program, Australian Marine Parks Tourist Operators.
+
+
+# Figure legends
+**Fig. 1** Behavioural arena. **a** Schematic representation of the behavioural arena. Visual stimuli were attached to a Plexiglas sheet (indicated by hatching) using Velcro, with the bottom of the stimulus on the floor of the arena. The sheet was lowered into the arena and fastened by clamps. The wall of the arena was white. For the experiments with black-and-white patterns, a mid-intensity grey cloth was attached to the inside wall of the arena. **b** Five different stimuli were presented to the animals: three black-and-white stimuli, a black circular stimulus and a grey circular stimulus. For each black-and-white stimulus the area of black was equal to the area of white. For all similar sized circular, or rectangular, stimuli the area of black was the equal. **c** The arena during an experiment. Recordings were made with a camera floating on the surface of the water. Abbreviations: c, camera; cl, clamps for attaching the Plexiglas sheet; m, middle of the arena; s, stimulus; sf, starfish. Example tracks for: **d** black circles (angular height 37°) on a white background and **e** the control experiment with only the Plexiglas sheet on a white background. The stimulus is located at 0°   
+
+**Fig. 2** Behavioural results: paired black and white rectangles presented on the mid-intensity grey background. **a-e** Animals were attracted to stimulus when the angular height of the stimuli was 32° or larger. The stimuli were always presented with the black rectangle to the left. The mean vector of the significant responses is pointing left of 0°, indicating that on average the animals were headed to the black half of the stimulus. In the circular plots, the small, black, filled circles represent the final angular positions of the animals. The direction of the arrow indicates the mean direction and the length of the arrow represents the length of the mean vector (rho). The radius of the circle represents a vector length of 1. The 95% confidence intervals for the response are indicated by dashed lines, only when the p-value for the Rayleigh test is smaller than 0.05. A summary of the circular statistics is given in Table 1.     
+
+**Fig. 3** Behavioural results: black rectangle centred on a white square, presented on the mid-intensity grey background. **a-e** Starfish were either attracted to this stimulus or repelled, as seen by the axial nature of the directional responses. Animals responded to rectangles with an angular height of 5°, 32° and 43°. For more details on the circular plots see caption of Fig. 2. A summary of the circular statistics is given in Table 1     
+
+**Fig. 4** Behavioural results: black-and-white circles on a mid-intensity grey background. **a-f** Animals did not show directional responses to the circles or the control experiment, where the Plexiglas sheet was presented against the grey background. The angular height of the black centre of the stimulus is given first, followed by the angular height of the entire stimulus. For more details on the circular plots see caption of Fig. 2. A summary of the circular statistics is given in Table 1    
+
+**Fig. 5** Crown-of-thorns starfish perception of the black-and-white circles at varying distances. **a** Visual representation of the stimulus and the field of view of a single eye at varying distance between the starfish and the stimulus. The numbers indicate the distance of the eye to the stimulus in centimetres and the red lines mark the outline of the visual field. The stimulus circle shown here has an angular height of 37° seen from the centre of the arena. **b** Relation between the proportion of white in the field of view and the distance to the stimulus. Note that at close distance to the stimulus, the white area sampled by the eye was twice the size of the sampled black area   
+
+**Fig. 6** Behavioural results: black circle on a white background. **a-e** Starfish were attracted to circles with initial angular sizes of 14° or larger. All stimuli were attached to a Plexiglas sheet using Velcro, and the entire sheet was placed in the behavioural arena. **f** Starfish where not attracted to the control stimulus, the Plexiglas sheet alone, without stimulus patterns. For more details on the circular plots see caption of Fig. 2. A summary of the circular statistics is given in Table 1        
+
+**Fig. 7** Contrasts between corals and the surrounding water within the coral reef environment. Contrasts were measured on images taken through a blue filter with a transmittance curve similar to the spectral sensitivity curve of the starfish eye. The contrast at 1 m measured `r round(max(final.contrasts$contrast) ,2)` for the coral boulder and `r round(max(final.contrasts$contrast[final.contrasts$description=="blue staghorn"]), 2)` for the blue staghorn coral. Two measurements were done on the same small reef, the first with the sun in the back and the second facing the sun     
+
+**Fig. 8** Behavioural results: grey circle on a white background. **a-e** Animals responded to circles with an initial angular size of 37° when the contrast was 0.5 or higher. For more details on the circular plots see caption of Fig. 2. A summary of the circular statistics is given in Table 1    
+
+**Supplementary Fig. 1** Spectral transmittance curve blue filter. The relative transmittance of the filter is drawn in blue and the spectral sensitivity of the crown-of-thorn starfish photoreceptors in black (taken from [@petie2016]). Grey shading indicating the standard deviation   
+\newpage
+
+# Illustrations and figures
+**Figure 1. Behavioural arena**    
+![](Setup_and_analysis05.png)
+
+**Figure 2. Paired black and white rectangles presented on a grey background. Black left to white.**    
+```{r BWSquareA, echo=FALSE, fig.width=5.83, fig.height=2.85, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Paired black and white rectangles presented on a grey background. Black left to white.")}
+# Select data
+graph.data <- filter(selection, type=="Paired rectangles")
+
+# Set levels to use
+levels <- c("5°", "9°", "18°", "32°", "43°")
+# Analysis method
+analysis <- rep("angular", times = length(levels))
+# Plot graphs and gather stats into data frame
+BWSquareA <- CircularOrganiser(levels, graph.data, analysis)
+# Add experiment indication
+BWSquareA <- cbind(data.frame(experiment = "Paired rectangles",
+                              background = "grey"), 
+                   BWSquareA)
+```   
+
+
+**Figure 3. Black rectangle centred in a white square presented on a grey background**    
+```{r BWSquareC, echo=FALSE, fig.width=5.83, fig.height=2.85, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Black rectangle centred in a white square presented on a grey background")}
+# Select data
+graph.data <- filter(selection, type=="Centred black rectangles")
+# Set levels to use
+levels <- c("5°", "9°", "18°", "32°", "43°")
+# Analysis method
+analysis <- rep("axial", times = length(levels))
+# Plot graphs and gather stats into data frame
+BWSquareC <- CircularOrganiser(levels, graph.data, analysis)
+# Add experiment indication
+BWSquareC <- cbind(data.frame(experiment = "Centred black rectangle",
+                              background = "grey"),
+                   BWSquareC)
+```
+
+**Figure 4. black-and-white circle on a grey background.**    
+```{r BWCircle, echo=FALSE, fig.width=7, fig.height=2.85, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Black and white circle on a grey background.")}
+# Black and white circle.
+# Data goes into table.
+
+# Select data
+graph.data <- filter(selection, type=="B&W circle on grey")
+# Set levels to use
+levels <- c("4°/5°", "7°/10°", "14°/20°", "27°/35°", "37°/47°", "control")
+# Analysis method
+analysis <- rep("angular", times = length(levels))
+# Plot graphs and gather stats into data frame
+BWCircle <- CircularOrganiser(levels, graph.data, analysis, plot=TRUE)
+# Add experiment indication
+BWCircle <- cbind(data.frame(experiment = "Black and white circle",
+                             background = "grey"), BWCircle)
+```
+
+**Figure 5. Starfish' view of black-and-white circles**   
+![](Field_of_view06.png)
+
+**Figure 6. Black circle on a white background**   
+```{r blackOnWhite, echo=FALSE, fig.width=7, fig.height=2.85, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Black circle on a white background")}
+# Select data
+graph.data <- filter(selection, type=="Black circle on white")
+# Levels to use
+levels <- c("4°", "7°", "14°", "27°", "37°", "control")
+# Analysis method
+analysis <- rep("angular", times = length(levels))
+# Plot graphs and gather stats into data frame
+BonW <- CircularOrganiser(levels, graph.data, analysis)
+# Add experiment indication
+BonW <- cbind(data.frame(experiment = "Black circle",
+                         background = "white"), BonW)
+```
+
+**Figure 7. Coral reef contrasts**    
+```{r contrastPlot, echo=FALSE, fig.width=4, fig.height=2.25, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Coral reef contrasts")}
+
+# Data is loaded above. Plot figure
+contrast <- contrast + 
+  # Apply custom theme
+  my.theme + 
+  # Place legend inside plot
+  theme(legend.position=c(0.75, 0.75))
+print(contrast)
+```
+
+**Figure 8. Grey circle on a white background**    
+```{r greyOnWhite, echo=FALSE, fig.width=5.83, fig.height=2.85, message=FALSE, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Grey circle on a white background")}
+# Select data
+graph.data <- filter(selection, type=="Grey circle on white")
+# Set levels to use
+levels <- c("0.1", "0.3", "0.5", "0.7", "0.9")
+# Analysis method
+analysis <- c("angular", "angular", "axial", "angular", "angular")
+# Plot graphs and gather stats into data frame
+GonW <- CircularOrganiser(levels, graph.data, analysis)
+# Add experiment indication
+GonW <- cbind(data.frame(experiment = "Grey circle",
+                         background = "white"), GonW)
+```
+
+**Supplementary figure 1. Spectral transmittance curve blue filter.**
+```{r blueFilterPlot, echo=FALSE, message=FALSE, fig.width=4, fig.height=2.25, dpi=600, dev.args=list(bg = "transparent"), fig.cap=("Spectral transmittance curve blue filter.")}
+
+#-------------------------------------------------------------------------------
+# Read data
+
+# Relative sensitivity starfish eye
+rel.sens <- read.csv(file.path("..", "Data", 
+                               "relative_sensitivity02.csv"),
+                     sep=";", dec=",") %>%
+  select(wavelength, average, stdev)
+
+# Blue filter transmittance.
+blue <- read.csv(
+  file.path("..", "Data", "Lagoon_blue_transmittance(3).txt"),
+  sep="", dec=".", skip=10) %>%
+  select(Wavelength.nm., Transmittance...) %>%
+  filter(Wavelength.nm. >=430, Wavelength.nm. <=700)
+
+# Change names to more useable form
+dimnames(blue)[[2]] <- c("wavelength", "transmittance")
+
+# Devide transmittance values by 100 to get fraction instead of percentage
+blue$transmittance <- blue$transmittance/100
+
+# Set up plot
+filter.plot <- ggplot(rel.sens, aes(x=wavelength, y=average)) +
+  geom_ribbon(aes(ymin=average-stdev, ymax=average+stdev), fill = "grey") +
+  geom_line() +
+  geom_point() +
+  geom_line(data=blue, aes(x=wavelength, y=transmittance), colour="blue") +
+  guides(colour=FALSE) +
+  xlab("Wavelength (nm)") +
+  ylab("Relelative value") +
+  theme_bw()+ my.theme
+print(filter.plot)
+```
+\newpage
+
+# Tables
+```{r table, echo=FALSE, warning=FALSE, fig.cap="Circular statistics"}
+
+# Construct stats table for all AIMS data
+#stats <- rbind(BonW, GonW, BWCircle, BWSquareA, BWSquareC)
+stats <- rbind(BWSquareA, BWSquareC, BWCircle, BonW, GonW)
+# Reorganise
+stats <- select(stats, experiment, background, timing, test, level, n, mean, rho, Rayleigh)
+# Sort
+stats <- arrange(stats, experiment, timing, level)
+
+# Cleanup table
+stats$experiment <- createSpace(stats$experiment)
+stats$timing <- createSpace(stats$timing)
+
+# Now -180° to 0° 180° angles are given. Change to 0°-360° format
+stats$mean[stats$mean < 0] <- stats$mean[stats$mean < 0] + 360
+
+# Data is only presented for final headings, not initial headings. Omit timing
+# collumn.
+stats <- select(stats, -timing)
+
+# Round Rayleigh p-value
+stats$Rayleigh <- round(stats$Rayleigh, 3)
+stats$Rayleigh[stats$Rayleigh < 0.001] <- "< 0.001"
+stats$Rayleigh[stats$Rayleigh >= 0.001 & stats$Rayleigh < 0.01] <- "<= 0.01"
+stats$Rayleigh[stats$Rayleigh >= 0.01 & stats$Rayleigh < 0.05] <- "<= 0.05"
+
+# Make table
+kable(stats, digits=c(0, 0, 0, 0, 0, 0, 2, 3),
+      row.names = F,
+      align = "c",
+      col.names = c("experiment", "background", "test type","stimulus",
+                    "n", "mean heading (°)", "rho", "p-value"),
+      caption=paste0("Circular statistics summary. Rho denotes the relative ",
+                     "length of the mean vector. Given p-values are for ",
+                     "the Rayleigh test. For more information see text"))
+
+# Save table
+write.table(stats, file.path("..", "Output", "Summary table.csv"),
+            sep=";", dec=",", row.names=F)
+
+```
+
+# References

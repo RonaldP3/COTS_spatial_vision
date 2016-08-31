@@ -1,0 +1,299 @@
+date;location;description;sun;rep;distance;scene;row;mean;sd;mode;min;max;slice
+10-08-15;A;sun in back;back;1;10;foreground;1;123,2;1,6;123;113;138;1
+10-08-15;A;sun in back;back;1;10;background;2;122,0;1,2;122;113;131;1
+10-08-15;A;sun in back;back;1;9;foreground;3;125,2;1,4;125;111;137;2
+10-08-15;A;sun in back;back;1;9;background;4;130,7;1,6;131;118;137;2
+10-08-15;A;sun in back;back;1;8;foreground;5;119,2;2,1;120;112;126;3
+10-08-15;A;sun in back;back;1;8;background;6;127,1;1,4;127;122;134;3
+10-08-15;A;sun in back;back;1;6;foreground;7;118,5;2,9;118;106;131;4
+10-08-15;A;sun in back;back;1;6;background;8;126,4;1,4;126;120;134;4
+10-08-15;A;sun in back;back;1;5;foreground;9;112,9;4,5;109;93;140;5
+10-08-15;A;sun in back;back;1;5;background;10;128,4;1,8;128;119;138;5
+10-08-15;A;sun in back;back;1;4;foreground;11;116,5;8,2;122;87;166;6
+10-08-15;A;sun in back;back;1;4;background;12;135,8;1,6;135;128;145;6
+10-08-15;A;sun in back;back;1;3;foreground;13;102,2;13,1;109;63;165;7
+10-08-15;A;sun in back;back;1;3;background;14;129,4;1,7;130;120;138;7
+10-08-15;A;sun in back;back;1;2;foreground;15;85,4;16,8;94;33;163;8
+10-08-15;A;sun in back;back;1;2;background;16;120,5;1,4;120;113;126;8
+10-08-15;A;sun in back;back;1;1;foreground;17;100,9;19,5;106;45;196;9
+10-08-15;A;sun in back;back;1;1;background;18;140,0;1,2;140;133;153;9
+10-08-15;A;sun in back;back;2;10;foreground;1;122,3;1,9;121;117;131;1
+10-08-15;A;sun in back;back;2;10;background;2;123,7;1,7;124;118;129;1
+10-08-15;A;sun in back;back;2;9;foreground;3;126,1;1,4;126;119;133;2
+10-08-15;A;sun in back;back;2;9;background;4;133,8;2,0;133;126;141;2
+10-08-15;A;sun in back;back;2;8;foreground;5;124,0;1,6;124;116;131;3
+10-08-15;A;sun in back;back;2;8;background;6;133,7;1,6;133;129;139;3
+10-08-15;A;sun in back;back;2;7;foreground;7;122,9;3,2;121;115;141;4
+10-08-15;A;sun in back;back;2;7;background;8;134,6;1,6;134;129;140;4
+10-08-15;A;sun in back;back;2;6;foreground;9;121,5;2,4;121;114;132;5
+10-08-15;A;sun in back;back;2;6;background;10;133,2;1,4;133;129;138;5
+10-08-15;A;sun in back;back;2;5;foreground;11;114,4;1,9;114;106;123;6
+10-08-15;A;sun in back;back;2;5;background;12;127,0;1,2;127;120;135;6
+10-08-15;A;sun in back;back;2;4;foreground;13;123,1;3,3;123;111;151;7
+10-08-15;A;sun in back;back;2;4;background;14;139,2;1,1;139;134;144;7
+10-08-15;A;sun in back;back;2;3;foreground;15;115,5;4,8;115;94;157;8
+10-08-15;A;sun in back;back;2;3;background;16;135,6;1,4;136;119;144;8
+10-08-15;A;sun in back;back;2;2;foreground;17;112,9;8,4;115;84;176;9
+10-08-15;A;sun in back;back;2;2;background;18;140,0;1,1;140;133;146;9
+10-08-15;A;sun in back;back;2;1;foreground;19;103,0;19,0;104;54;210;10
+10-08-15;A;sun in back;back;2;1;background;20;141,1;1,3;141;132;147;10
+10-08-15;A;sun in back;back;3;10;foreground;1;121,1;1,4;121;116;126;1
+10-08-15;A;sun in back;back;3;10;background;2;122,8;1,5;122;118;129;1
+10-08-15;A;sun in back;back;3;9;foreground;3;128,2;2,0;127;120;135;2
+10-08-15;A;sun in back;back;3;9;background;4;132,9;1,3;132;129;139;2
+10-08-15;A;sun in back;back;3;8;foreground;5;124,6;2,1;124;116;133;3
+10-08-15;A;sun in back;back;3;8;background;6;133,3;1,3;133;129;138;3
+10-08-15;A;sun in back;back;3;7;foreground;7;124,5;5,1;121;115;145;4
+10-08-15;A;sun in back;back;3;7;background;8;134,2;1,5;134;128;140;4
+10-08-15;A;sun in back;back;3;6;foreground;9;118,1;3,4;116;106;131;5
+10-08-15;A;sun in back;back;3;6;background;10;131,8;1,1;131;128;136;5
+10-08-15;A;sun in back;back;3;5;foreground;11;114,5;3,0;115;102;130;6
+10-08-15;A;sun in back;back;3;5;background;12;126,6;1,3;126;120;133;6
+10-08-15;A;sun in back;back;3;4;foreground;13;123,0;3,7;123;109;161;7
+10-08-15;A;sun in back;back;3;4;background;14;137,3;1,0;137;133;142;7
+10-08-15;A;sun in back;back;3;3;foreground;15;115,6;5,1;115;94;157;8
+10-08-15;A;sun in back;back;3;3;background;16;135,4;1,6;135;118;144;8
+10-08-15;A;sun in back;back;3;2;foreground;17;113,0;9,6;115;79;178;9
+10-08-15;A;sun in back;back;3;2;background;18;140,1;1,1;140;133;146;9
+10-08-15;A;sun in back;back;3;1;foreground;19;102,3;19,3;102;52;210;10
+10-08-15;A;sun in back;back;3;1;background;20;141,0;1,2;141;135;146;10
+10-08-15;A;sun in face;face;1;10;foreground;1;148,7;1,3;148;143;153;1
+10-08-15;A;sun in face;face;1;10;background;2;148,7;1,1;149;143;153;1
+10-08-15;A;sun in face;face;1;9;foreground;3;133,7;1,1;134;130;139;2
+10-08-15;A;sun in face;face;1;9;background;4;131,6;1,0;131;127;136;2
+10-08-15;A;sun in face;face;1;8;foreground;5;137,9;2,0;138;132;145;3
+10-08-15;A;sun in face;face;1;8;background;6;133,3;1,0;133;128;137;3
+10-08-15;A;sun in face;face;1;7;foreground;7;144,9;1,7;144;138;153;4
+10-08-15;A;sun in face;face;1;7;background;8;141,6;1,1;142;135;146;4
+10-08-15;A;sun in face;face;1;6;foreground;9;133,0;1,6;133;127;143;5
+10-08-15;A;sun in face;face;1;6;background;10;142,6;1,2;142;137;147;5
+10-08-15;A;sun in face;face;1;5;foreground;11;120,5;2,5;119;112;130;6
+10-08-15;A;sun in face;face;1;5;background;12;135,7;1,3;136;132;140;6
+10-08-15;A;sun in face;face;1;4;foreground;13;129,7;4,2;126;118;150;7
+10-08-15;A;sun in face;face;1;4;background;14;145,2;1,2;145;142;149;7
+10-08-15;A;sun in face;face;1;3;foreground;15;117,9;6,7;112;102;140;8
+10-08-15;A;sun in face;face;1;3;background;16;148,0;1,3;148;142;152;8
+10-08-15;A;sun in face;face;1;2;foreground;17;103,0;11,4;93;79;150;9
+10-08-15;A;sun in face;face;1;2;background;18;136,6;1,3;137;133;141;9
+10-08-15;A;sun in face;face;1;1;foreground;19;95,4;16,4;81;58;174;10
+10-08-15;A;sun in face;face;1;1;background;20;149,6;1,4;150;143;154;10
+10-08-15;A;sun in face;face;2;10;foreground;1;143,2;1,3;143;138;149;1
+10-08-15;A;sun in face;face;2;10;background;2;142,0;1,3;142;139;146;1
+10-08-15;A;sun in face;face;2;9;foreground;3;139,6;1,2;139;135;145;2
+10-08-15;A;sun in face;face;2;9;background;4;139,0;1,2;139;135;144;2
+10-08-15;A;sun in face;face;2;8;foreground;5;141,0;1,2;141;136;149;3
+10-08-15;A;sun in face;face;2;8;background;6;142,1;1,2;142;138;146;3
+10-08-15;A;sun in face;face;2;7;foreground;7;130,5;2,0;129;124;136;4
+10-08-15;A;sun in face;face;2;7;background;8;135,5;1,7;135;131;140;4
+10-08-15;A;sun in face;face;2;6;foreground;9;135,9;2,9;134;129;145;5
+10-08-15;A;sun in face;face;2;6;background;10;144,4;1,3;145;141;148;5
+10-08-15;A;sun in face;face;2;5;foreground;11;131,1;3,7;128;119;144;6
+10-08-15;A;sun in face;face;2;5;background;12;141,6;1,2;142;137;146;6
+10-08-15;A;sun in face;face;2;4;foreground;13;128,3;4,0;126;118;149;7
+10-08-15;A;sun in face;face;2;4;background;14;142,6;1,3;142;139;148;7
+10-08-15;A;sun in face;face;2;3;foreground;15;120,5;5,7;116;106;144;8
+10-08-15;A;sun in face;face;2;3;background;16;147,5;1,1;147;145;152;8
+10-08-15;A;sun in face;face;2;2;foreground;17;110,6;10,4;104;89;166;9
+10-08-15;A;sun in face;face;2;2;background;18;142,3;1,3;142;139;147;9
+10-08-15;A;sun in face;face;2;1;foreground;19;97,0;17,2;82;62;175;10
+10-08-15;A;sun in face;face;2;1;background;20;151,9;1,5;151;148;159;10
+10-08-15;A;sun in face;face;3;10;foreground;1;150,1;1,1;150;147;154;1
+10-08-15;A;sun in face;face;3;10;background;2;149,7;1,1;150;145;153;1
+10-08-15;A;sun in face;face;3;9;foreground;3;139,3;1,3;139;135;145;2
+10-08-15;A;sun in face;face;3;9;background;4;139,5;1,3;140;135;144;2
+10-08-15;A;sun in face;face;3;8;foreground;5;134,5;1,6;134;130;141;3
+10-08-15;A;sun in face;face;3;8;background;6;137,0;1,3;137;133;140;3
+10-08-15;A;sun in face;face;3;7;foreground;7;132,3;1,8;132;126;139;4
+10-08-15;A;sun in face;face;3;7;background;8;137,1;1,1;137;133;141;4
+10-08-15;A;sun in face;face;3;6;foreground;9;132,3;2,0;131;126;141;5
+10-08-15;A;sun in face;face;3;6;background;10;141,2;1,3;141;137;146;5
+10-08-15;A;sun in face;face;3;5;foreground;11;134,6;3,2;133;126;147;6
+10-08-15;A;sun in face;face;3;5;background;12;146,4;1,1;146;143;150;6
+10-08-15;A;sun in face;face;3;4;foreground;13;127,1;4,6;123;117;149;7
+10-08-15;A;sun in face;face;3;4;background;14;141,7;1,3;142;138;145;7
+10-08-15;A;sun in face;face;3;3;foreground;15;131,1;6,1;126;116;180;8
+10-08-15;A;sun in face;face;3;3;background;16;151,1;1,4;151;147;157;8
+10-08-15;A;sun in face;face;3;2;foreground;17;107,3;8,6;100;85;157;9
+10-08-15;A;sun in face;face;3;2;background;18;139,5;1,4;139;135;145;9
+10-08-15;A;sun in face;face;3;1;foreground;19;91,5;18,3;79;51;180;10
+10-08-15;A;sun in face;face;3;1;background;20;163,2;1,2;163;158;172;10
+11-08-15;B;blue staghorn;back;1;10;foreground;1;114,4;1,4;114;108;120;1
+11-08-15;B;blue staghorn;back;1;10;background;2;113,7;1,1;114;110;118;1
+11-08-15;B;blue staghorn;back;1;9;foreground;3;121,2;1,9;121;116;126;2
+11-08-15;B;blue staghorn;back;1;9;background;4;120,9;1,1;121;117;125;2
+11-08-15;B;blue staghorn;back;1;8;foreground;5;120,5;2,4;119;113;128;3
+11-08-15;B;blue staghorn;back;1;8;background;6;119,2;1,3;119;115;124;3
+11-08-15;B;blue staghorn;back;1;7;foreground;7;122,9;3,9;121;114;151;4
+11-08-15;B;blue staghorn;back;1;7;background;8;119,2;1,7;119;114;125;4
+11-08-15;B;blue staghorn;back;1;6;foreground;9;112,6;2,8;111;102;130;5
+11-08-15;B;blue staghorn;back;1;6;background;10;110,6;1,3;111;105;119;5
+11-08-15;B;blue staghorn;back;1;5;foreground;11;109,8;3,3;109;98;140;6
+11-08-15;B;blue staghorn;back;1;5;background;12;109,8;1,7;109;105;120;6
+11-08-15;B;blue staghorn;back;1;4;foreground;13;104,7;4,3;103;88;138;7
+11-08-15;B;blue staghorn;back;1;4;background;14;106,4;1,5;106;101;115;7
+11-08-15;B;blue staghorn;back;1;3;foreground;15;100,6;6,6;97;77;148;8
+11-08-15;B;blue staghorn;back;1;3;background;16;106,5;1,5;106;101;116;8
+11-08-15;B;blue staghorn;back;1;2;foreground;17;89,9;9,8;82;62;155;9
+11-08-15;B;blue staghorn;back;1;2;background;18;101,3;1,5;102;95;107;9
+11-08-15;B;blue staghorn;back;1;1;foreground;19;82,5;15,8;68;41;171;10
+11-08-15;B;blue staghorn;back;1;1;background;20;102,9;1,5;103;98;111;10
+11-08-15;B;blue staghorn;back;2;10;foreground;1;124,6;2,0;124;119;133;1
+11-08-15;B;blue staghorn;back;2;10;background;2;123,3;1,4;124;118;131;1
+11-08-15;B;blue staghorn;back;2;9;foreground;3;123,6;1,8;123;118;130;2
+11-08-15;B;blue staghorn;back;2;9;background;4;119,4;1,2;119;115;124;2
+11-08-15;B;blue staghorn;back;2;8;foreground;5;125,4;2,5;124;118;139;3
+11-08-15;B;blue staghorn;back;2;8;background;6;122,1;1,2;122;119;127;3
+11-08-15;B;blue staghorn;back;2;7;foreground;7;122,5;2,9;121;114;133;4
+11-08-15;B;blue staghorn;back;2;7;background;8;117,9;1,2;118;114;127;4
+11-08-15;B;blue staghorn;back;2;6;foreground;9;118,8;7,4;115;105;154;5
+11-08-15;B;blue staghorn;back;2;6;background;10;112,5;1,2;113;107;118;5
+11-08-15;B;blue staghorn;back;2;5;foreground;11;112,6;4,0;111;93;149;6
+11-08-15;B;blue staghorn;back;2;5;background;12;109,5;1,8;109;101;138;6
+11-08-15;B;blue staghorn;back;2;4;foreground;13;107,4;6,0;105;87;161;7
+11-08-15;B;blue staghorn;back;2;4;background;14;107,2;1,6;107;103;118;7
+11-08-15;B;blue staghorn;back;2;3;foreground;15;101,9;9,1;96;77;179;8
+11-08-15;B;blue staghorn;back;2;3;background;16;105,7;1,4;106;99;117;8
+11-08-15;B;blue staghorn;back;2;2;foreground;17;92,1;11,4;82;59;167;9
+11-08-15;B;blue staghorn;back;2;2;background;18;101,2;1,3;101;96;106;9
+11-08-15;B;blue staghorn;back;2;1;foreground;19;84,6;18,3;67;40;199;10
+11-08-15;B;blue staghorn;back;2;1;background;20;100,8;1,3;101;96;106;10
+11-08-15;B;blue staghorn;back;3;10;foreground;1;127,4;2,1;128;120;134;1
+11-08-15;B;blue staghorn;back;3;10;background;2;124,0;1,2;124;119;128;1
+11-08-15;B;blue staghorn;back;3;9;foreground;3;125,1;1,9;125;119;136;2
+11-08-15;B;blue staghorn;back;3;9;background;4;123,6;1,4;124;120;133;2
+11-08-15;B;blue staghorn;back;3;8;foreground;5;122,5;2,3;122;116;132;3
+11-08-15;B;blue staghorn;back;3;8;background;6;120,1;1,6;120;114;126;3
+11-08-15;B;blue staghorn;back;3;7;foreground;7;118,6;2,6;116;112;129;4
+11-08-15;B;blue staghorn;back;3;7;background;8;114,7;1,4;115;109;120;4
+11-08-15;B;blue staghorn;back;3;6;foreground;9;116,3;2,6;115;107;140;5
+11-08-15;B;blue staghorn;back;3;6;background;10;113,2;1,2;113;108;120;5
+11-08-15;B;blue staghorn;back;3;5;foreground;11;114,3;3,9;113;99;150;6
+11-08-15;B;blue staghorn;back;3;5;background;12;112,7;1,3;113;107;117;6
+11-08-15;B;blue staghorn;back;3;4;foreground;13;107,9;5,2;105;84;144;7
+11-08-15;B;blue staghorn;back;3;4;background;14;108,4;1,4;108;104;124;7
+11-08-15;B;blue staghorn;back;3;3;foreground;15;104,0;7,9;101;78;175;8
+11-08-15;B;blue staghorn;back;3;3;background;16;108,7;1,2;109;104;114;8
+11-08-15;B;blue staghorn;back;3;2;foreground;17;97,5;13,2;93;64;208;9
+11-08-15;B;blue staghorn;back;3;2;background;18;107,1;1,5;107;101;118;9
+11-08-15;B;blue staghorn;back;3;1;foreground;19;80,7;15,5;67;42;190;10
+11-08-15;B;blue staghorn;back;3;1;background;20;97,0;2,2;97;90;108;10
+11-08-15;B;brown staghorn;side;1;10;foreground;1;128,8;1,7;128;124;135;1
+11-08-15;B;brown staghorn;side;1;10;background;2;128,1;1,4;128;123;134;1
+11-08-15;B;brown staghorn;side;1;9;foreground;3;125,2;1,9;125;119;133;2
+11-08-15;B;brown staghorn;side;1;9;background;4;123,3;1,2;123;120;130;2
+11-08-15;B;brown staghorn;side;1;8;foreground;5;126,4;2,3;125;119;137;3
+11-08-15;B;brown staghorn;side;1;8;background;6;121,9;1,2;122;118;136;3
+11-08-15;B;brown staghorn;side;1;7;foreground;7;120,0;2,0;120;113;138;4
+11-08-15;B;brown staghorn;side;1;7;background;8;119,9;1,3;120;115;126;4
+11-08-15;B;brown staghorn;side;1;6;foreground;9;119,3;3,0;120;103;156;5
+11-08-15;B;brown staghorn;side;1;6;background;10;120,0;1,1;120;115;123;5
+11-08-15;B;brown staghorn;side;1;5;foreground;11;119,3;4,4;120;100;164;6
+11-08-15;B;brown staghorn;side;1;5;background;12;121,5;1,1;121;115;126;6
+11-08-15;B;brown staghorn;side;1;4;foreground;13;112,1;7,0;108;86;179;7
+11-08-15;B;brown staghorn;side;1;4;background;14;118,4;1,4;119;113;129;7
+11-08-15;B;brown staghorn;side;1;3;foreground;15;105,1;10,3;104;71;185;8
+11-08-15;B;brown staghorn;side;1;3;background;16;115,2;1,7;115;108;141;8
+11-08-15;B;brown staghorn;side;1;2;foreground;17;90,9;13,8;86;55;200;9
+11-08-15;B;brown staghorn;side;1;2;background;18;110,6;1,5;111;101;117;9
+11-08-15;B;brown staghorn;side;1;1;foreground;19;78,3;22,8;72;35;210;10
+11-08-15;B;brown staghorn;side;1;1;background;20;116,7;1,4;116;112;124;10
+11-08-15;B;brown staghorn;side;2;10;foreground;1;128,2;1,6;128;122;134;1
+11-08-15;B;brown staghorn;side;2;10;background;2;126,7;1,1;127;123;130;1
+11-08-15;B;brown staghorn;side;2;9;foreground;3;128,2;1,5;128;123;136;2
+11-08-15;B;brown staghorn;side;2;9;background;4;127,0;1,0;127;122;133;2
+11-08-15;B;brown staghorn;side;2;8;foreground;5;127,2;1,7;127;122;137;3
+11-08-15;B;brown staghorn;side;2;8;background;6;125,3;1,0;125;122;129;3
+11-08-15;B;brown staghorn;side;2;7;foreground;7;126,0;2,1;125;119;138;4
+11-08-15;B;brown staghorn;side;2;7;background;8;124,9;1,0;125;122;129;4
+11-08-15;B;brown staghorn;side;2;6;foreground;9;121,4;2,6;122;112;147;5
+11-08-15;B;brown staghorn;side;2;6;background;10;121,7;1,0;122;119;126;5
+11-08-15;B;brown staghorn;side;2;5;foreground;11;124,7;4,1;125;108;159;6
+11-08-15;B;brown staghorn;side;2;5;background;12;126,0;1,3;126;121;134;6
+11-08-15;B;brown staghorn;side;2;4;foreground;13;117,2;6,7;115;89;181;7
+11-08-15;B;brown staghorn;side;2;4;background;14;121,6;1,2;121;117;128;7
+11-08-15;B;brown staghorn;side;2;3;foreground;15;108,2;9,8;109;77;197;8
+11-08-15;B;brown staghorn;side;2;3;background;16;118,6;1,4;119;112;129;8
+11-08-15;B;brown staghorn;side;2;2;foreground;17;97,6;15,6;93;56;223;9
+11-08-15;B;brown staghorn;side;2;2;background;18;117,4;2,0;117;104;140;9
+11-08-15;B;brown staghorn;side;2;1;foreground;19;82,7;23,9;73;38;228;10
+11-08-15;B;brown staghorn;side;2;1;background;20;118,0;2,3;118;98;146;10
+11-08-15;B;brown staghorn;side;3;10;foreground;1;130,5;1,9;131;124;139;1
+11-08-15;B;brown staghorn;side;3;10;background;2;128,7;1,2;128;125;134;1
+11-08-15;B;brown staghorn;side;3;9;foreground;3;134,2;3,4;133;123;149;2
+11-08-15;B;brown staghorn;side;3;9;background;4;131,5;1,2;132;125;139;2
+11-08-15;B;brown staghorn;side;3;8;foreground;5;130,6;2,3;130;123;140;3
+11-08-15;B;brown staghorn;side;3;8;background;6;128,0;1,3;128;124;142;3
+11-08-15;B;brown staghorn;side;3;7;foreground;7;127,4;2,5;128;118;145;4
+11-08-15;B;brown staghorn;side;3;7;background;8;125,8;1,1;126;123;130;4
+11-08-15;B;brown staghorn;side;3;6;foreground;9;123,9;3,1;125;109;154;5
+11-08-15;B;brown staghorn;side;3;6;background;10;124,0;1,1;124;119;128;5
+11-08-15;B;brown staghorn;side;3;5;foreground;11;123,2;3,7;123;106;176;6
+11-08-15;B;brown staghorn;side;3;5;background;12;124,9;1,2;125;119;136;6
+11-08-15;B;brown staghorn;side;3;4;foreground;13;118,9;6,5;119;91;173;7
+11-08-15;B;brown staghorn;side;3;4;background;14;125,1;1,2;125;120;131;7
+11-08-15;B;brown staghorn;side;3;3;foreground;15;113,0;8,8;110;81;192;8
+11-08-15;B;brown staghorn;side;3;3;background;16;121,4;1,3;121;117;127;8
+11-08-15;B;brown staghorn;side;3;2;foreground;17;109,2;13,3;109;70;204;9
+11-08-15;B;brown staghorn;side;3;2;background;18;129,6;2,2;129;113;153;9
+11-08-15;B;brown staghorn;side;3;1;foreground;19;93,7;20,6;94;47;229;10
+11-08-15;B;brown staghorn;side;3;1;background;20;128,5;2,5;128;102;162;10
+11-08-15;B;coral boulder;side;1;10;foreground;1;123,9;1,4;124;118;130;1
+11-08-15;B;coral boulder;side;1;10;background;2;121,1;1,2;121;117;125;1
+11-08-15;B;coral boulder;side;1;9;foreground;3;118,1;1,7;118;111;136;2
+11-08-15;B;coral boulder;side;1;9;background;4;121,8;1,3;122;116;133;2
+11-08-15;B;coral boulder;side;1;8;foreground;5;118,0;3,5;115;111;141;3
+11-08-15;B;coral boulder;side;1;8;background;6;123,7;1,3;123;119;128;3
+11-08-15;B;coral boulder;side;1;7;foreground;7;116,2;3,6;115;101;146;4
+11-08-15;B;coral boulder;side;1;7;background;8;123,0;1,2;123;112;127;4
+11-08-15;B;coral boulder;side;1;6;foreground;9;116,1;3,8;115;101;162;5
+11-08-15;B;coral boulder;side;1;6;background;10;125,1;1,3;125;120;137;5
+11-08-15;B;coral boulder;side;1;5;foreground;11;110,5;4,1;110;95;174;6
+11-08-15;B;coral boulder;side;1;5;background;12;126,0;1,3;126;122;133;6
+11-08-15;B;coral boulder;side;1;4;foreground;13;103,7;4,6;102;85;172;7
+11-08-15;B;coral boulder;side;1;4;background;14;121,8;1,3;122;117;134;7
+11-08-15;B;coral boulder;side;1;3;foreground;15;93,1;5,8;92;74;167;8
+11-08-15;B;coral boulder;side;1;3;background;16;117,5;1,6;117;113;124;8
+11-08-15;B;coral boulder;side;1;2;foreground;17;89,1;9,0;83;66;185;9
+11-08-15;B;coral boulder;side;1;2;background;18;122,2;1,5;122;117;130;9
+11-08-15;B;coral boulder;side;1;1;foreground;19;57,1;5,2;55;32;129;10
+11-08-15;B;coral boulder;side;1;1;background;20;100,1;1,9;100;92;107;10
+11-08-15;B;coral boulder;side;2;10;foreground;1;120,8;2,6;119;112;138;10
+11-08-15;B;coral boulder;side;2;10;background;2;121,9;1,2;122;118;128;10
+11-08-15;B;coral boulder;side;2;9;foreground;3;115,8;3,0;115;105;140;11
+11-08-15;B;coral boulder;side;2;9;background;4;115,8;1,3;116;112;129;11
+11-08-15;B;coral boulder;side;2;8;foreground;5;119,5;2,5;119;111;144;12
+11-08-15;B;coral boulder;side;2;8;background;6;123,8;1,5;124;119;138;12
+11-08-15;B;coral boulder;side;2;7;foreground;7;121,2;5,7;120;105;183;1
+11-08-15;B;coral boulder;side;2;7;background;8;124,9;1,2;125;120;135;1
+11-08-15;B;coral boulder;side;2;6;foreground;9;109,2;6,0;106;92;167;2
+11-08-15;B;coral boulder;side;2;6;background;10;115,2;1,5;115;111;121;2
+11-08-15;B;coral boulder;side;2;5;foreground;11;105,6;4,4;104;88;159;3
+11-08-15;B;coral boulder;side;2;5;background;12;116,5;1,2;116;113;122;3
+11-08-15;B;coral boulder;side;2;4;foreground;13;105,4;4,8;104;85;170;4
+11-08-15;B;coral boulder;side;2;4;background;14;120,8;1,5;121;117;145;4
+11-08-15;B;coral boulder;side;2;3;foreground;15;96,4;6,5;93;74;197;5
+11-08-15;B;coral boulder;side;2;3;background;16;121,5;1,9;121;115;131;5
+11-08-15;B;coral boulder;side;2;2;foreground;17;85,0;7,8;81;59;192;6
+11-08-15;B;coral boulder;side;2;2;background;18;116,2;1,5;116;111;131;6
+11-08-15;B;coral boulder;side;2;1;foreground;19;60,2;9,0;54;30;203;7
+11-08-15;B;coral boulder;side;2;1;background;20;107,4;1,9;107;100;123;7
+11-08-15;B;coral boulder;side;3;10;foreground;1;128,2;2,4;127;116;162;1
+11-08-15;B;coral boulder;side;3;10;background;2;126,7;1,2;127;122;133;1
+11-08-15;B;coral boulder;side;3;9;foreground;3;120,3;1,9;120;113;156;2
+11-08-15;B;coral boulder;side;3;9;background;4;123,3;1,2;123;120;128;2
+11-08-15;B;coral boulder;side;3;8;foreground;5;113,5;2,4;113;104;139;3
+11-08-15;B;coral boulder;side;3;8;background;6;116,1;1,1;116;113;122;3
+11-08-15;B;coral boulder;side;3;7;foreground;7;114,9;3,5;115;98;181;4
+11-08-15;B;coral boulder;side;3;7;background;8;118,3;1,2;118;114;126;4
+11-08-15;B;coral boulder;side;3;6;foreground;9;115,5;3,2;113;100;162;5
+11-08-15;B;coral boulder;side;3;6;background;10;121,8;1,1;122;118;126;5
+11-08-15;B;coral boulder;side;3;5;foreground;11;112,4;3,8;111;93;175;6
+11-08-15;B;coral boulder;side;3;5;background;12;119,6;1,3;119;115;132;6
+11-08-15;B;coral boulder;side;3;4;foreground;13;110,3;4,1;109;93;170;7
+11-08-15;B;coral boulder;side;3;4;background;14;120,8;1,1;121;115;126;7
+11-08-15;B;coral boulder;side;3;3;foreground;15;93,7;6,2;92;74;163;8
+11-08-15;B;coral boulder;side;3;3;background;16;114,9;1,3;115;110;124;8
+11-08-15;B;coral boulder;side;3;2;foreground;17;89,6;8,2;87;58;197;9
+11-08-15;B;coral boulder;side;3;2;background;18;118,0;2,0;118;108;150;9
+11-08-15;B;coral boulder;side;3;1;foreground;19;67,5;11,0;59;34;206;10
+11-08-15;B;coral boulder;side;3;1;background;20;116,8;1,8;117;109;135;10
