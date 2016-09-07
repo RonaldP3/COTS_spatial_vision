@@ -1,6 +1,6 @@
 #Crown-of-thorns starfish have true image forming vision
 
-This repository contains all data and analysis files for the publication entiteled *Crown-of-thorns starfish have true image forming vision*, published in [Frontiers in Zoology](http://www.frontiersinzoology.com/), authored by:
+This repository contains all data and analysis files for the publication entiteled *Crown-of-thorns starfish have true image forming vision*, published in [Frontiers in Zoology](http://frontiersinzoology.biomedcentral.com/articles/10.1186/s12983-016-0174-9), authored by:
 
 * Ronald Petie
 * Anders Garm
