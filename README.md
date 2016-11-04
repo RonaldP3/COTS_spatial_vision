@@ -1,3 +1,6 @@
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.61273.svg)](https://doi.org/10.5281/zenodo.61273)
+
 #Crown-of-thorns starfish have true image forming vision
 
 This repository contains all data and analysis files for the publication entiteled *Crown-of-thorns starfish have true image forming vision*, published in [Frontiers in Zoology](http://frontiersinzoology.biomedcentral.com/articles/10.1186/s12983-016-0174-9), authored by:
